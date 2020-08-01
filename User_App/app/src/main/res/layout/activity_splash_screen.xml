@@ -22,9 +22,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
+            android:theme="@style/appname"
             android:layout_below="@+id/imagee"
             android:text="@string/app_name"
-            style="@style/appname"
             android:textColor="@color/black"
             android:textSize="40sp" />
 

@@ -158,6 +158,8 @@ public class Cart extends AppCompatActivity {
         usermap = databaseHandler.getuser_info();
         String username = usermap.get("username");
         String usermobile = usermap.get("userMobile");
+        String userAddress = usermap.get("userAddress");
+
         maps = databaseHandler.cartall();
         if (maps.size() > 0) {
             JSONArray array = new JSONArray();
@@ -175,11 +177,11 @@ public class Cart extends AppCompatActivity {
                 }
 
             }
-            sendordertoserver(array.toString(), username.toString(), usermobile.toString());
+            sendordertoserver(array.toString(), username.toString(), usermobile.toString(),userAddress.toString());
         }
     }
 
-    private void sendordertoserver(final String array, final String username, final String usermobile) {
+    private void sendordertoserver(final String array, final String username, final String usermobile,final String userAddress) {
         final Loader loader = new Loader(Cart.this);
         loader.startDialog();
         StringRequest request = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
@@ -214,6 +216,7 @@ public class Cart extends AppCompatActivity {
                 params.put("username", username);
                 params.put("usermobile", usermobile);
                 params.put("totalprice", totalprice);
+                params.put("address", userAddress);
                 return params;
             }
         };

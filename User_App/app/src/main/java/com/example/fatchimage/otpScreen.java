@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ProgressBar;
@@ -29,7 +30,7 @@ public class otpScreen extends AppCompatActivity {
     private TextView verify;
     private String systemgeneratedcode;
     private ProgressBar progressBar;
-    private String mobileNo, username;
+    private String mobileNo, username,useraddress;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +42,8 @@ public class otpScreen extends AppCompatActivity {
         progressBar.setVisibility(View.INVISIBLE);
         mobileNo = getIntent().getStringExtra("phoneNo");
         username = getIntent().getStringExtra("username");
+        useraddress = getIntent().getStringExtra("address");
+        Log.d("TAG", "onCreeeeate: "+useraddress);
 
         sendverificationcode(mobileNo);
         verify.setOnClickListener(new View.OnClickListener() {
@@ -112,6 +115,7 @@ public class otpScreen extends AppCompatActivity {
                             intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                             intent.putExtra("username", username);
                             intent.putExtra("userPhoneNo", mobileNo);
+                            intent.putExtra("address", useraddress);
                             intent.putExtra("flag","0");
                             startActivity(intent);
                         } else

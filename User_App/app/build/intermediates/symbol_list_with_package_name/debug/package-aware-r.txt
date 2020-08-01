@@ -1206,6 +1206,7 @@ id activity_chooser_view_content
 id add
 id addbutton
 id addd
+id address
 id adjust_height
 id adjust_width
 id alertTitle
@@ -1329,6 +1330,7 @@ id price
 id price_lay
 id profile
 id profileLogout
+id profileaddress
 id profilename
 id profilenumber
 id progress_circular

@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.view.View;
 
 import android.widget.EditText;
@@ -113,8 +114,9 @@ public class MainActivity extends AppCompatActivity {
         HashMap<String, String> params = new HashMap<>();
         params.put("userName", getIntent().getStringExtra("username"));
         params.put("userMobile", getIntent().getStringExtra("userPhoneNo"));
+        params.put("userAddress", getIntent().getStringExtra("address"));
+        Log.d("TAG", "fatchuserdataaa: "+getIntent().getStringExtra("address"));
         dbcart.setuserdata(params);
-
 
     }
 

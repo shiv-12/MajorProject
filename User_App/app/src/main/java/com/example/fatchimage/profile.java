@@ -12,7 +12,7 @@ import java.util.HashMap;
 
 public class profile extends AppCompatActivity {
 
-    private TextView name, mobilenumber, helloname, profileLogout;
+    private TextView name, mobilenumber, helloname, profileLogout,profileaddress;
     private DatabaseHandler dbcart;
     private HashMap<String, String> mapp;
     private static final String TAG = "profile";
@@ -24,11 +24,12 @@ public class profile extends AppCompatActivity {
         init();
 
         mapp = dbcart.getuser_info();
-        Log.d(TAG, "onCreateee: " + mapp.size());
+        Log.d(TAG, "onCreateee: " + mapp);
 
         helloname.setText(mapp.get("username"));
         name.setText(mapp.get("username"));
         mobilenumber.setText(mapp.get("userMobile"));
+        profileaddress.setText(mapp.get("userAddress"));
 
         profileLogout.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -48,6 +49,7 @@ public class profile extends AppCompatActivity {
         helloname = findViewById(R.id.helloname);
         profileLogout = findViewById(R.id.profileLogout);
         mobilenumber = findViewById(R.id.profilenumber);
+        profileaddress = findViewById(R.id.profileaddress);
         dbcart = new DatabaseHandler(profile.this);
         mapp = new HashMap<>();
     }

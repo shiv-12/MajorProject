@@ -32,6 +32,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     public static final String USER_TABLE = "user_info";
     public static final String USER_NAME = "user_name";
     public static final String USER_MOBILE = "user_mobile";
+    public static final String USER_ADDRESS = "user_address";
 
 
     public DatabaseHandler(Context context) {
@@ -44,7 +45,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         this.db = db;
         db.execSQL("CREATE TABLE " + CART_TABLE + " (" + COLUMN_ID + " INTEGER, " + COLUMN_QTY + " DOUBLE, "
                 + COLUMN_IMAGE + " TEXT, " + COLUMN_PRICE + " DOUBLE, " + COLUMN_DESC + " TEXT, " + COLUMN_NAME + " TEXT);");
-        db.execSQL("CREATE TABLE " + USER_TABLE + " (" + USER_NAME + " TEXT, " + USER_MOBILE + " TEXT);");
+        db.execSQL("CREATE TABLE " + USER_TABLE + "( " + USER_NAME + " TEXT, " + USER_MOBILE + " TEXT ," + USER_ADDRESS + " TEXT);");
         Log.d(TAG, "onCreate: table created !");
 
     }
@@ -153,6 +154,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         ContentValues values = new ContentValues();
         values.put(USER_NAME, mapp.get("userName"));
         values.put(USER_MOBILE, mapp.get("userMobile"));
+        values.put(USER_ADDRESS, mapp.get("userAddress"));
         db.insert(USER_TABLE, null, values);
         Log.d(TAG, "setuserdata: one row inserted !");
         return true;
@@ -167,6 +169,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         cursor.moveToLast();
         map.put("username", cursor.getString(cursor.getColumnIndex(USER_NAME)));
         map.put("userMobile", cursor.getString(cursor.getColumnIndex(USER_MOBILE)));
+        map.put("userAddress",cursor.getString(cursor.getColumnIndex(USER_ADDRESS)));
         return map;
 
     }
@@ -182,6 +185,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
             HashMap<String, String> hashMap = new HashMap<>();
             hashMap.put("userMobile", cursor.getString(cursor.getColumnIndex(USER_NAME)));
             hashMap.put("userName", cursor.getString(cursor.getColumnIndex(USER_MOBILE)));
+            hashMap.put("userAddress",cursor.getString(cursor.getColumnIndex(USER_ADDRESS)));
             map.add(hashMap);
             cursor.moveToNext();
         }

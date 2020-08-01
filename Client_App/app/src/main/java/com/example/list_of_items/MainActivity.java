@@ -64,6 +64,7 @@ public class MainActivity extends AppCompatActivity {
                         model_list.setUsermobile(obj.getString("usermobile"));
                         model_list.setUsername(obj.getString("username"));
                         model_list.setTotalprice(obj.getString("totalprice"));
+                        model_list.setAddress(obj.getString("address"));
                         for (int j = 0; j < array1.length(); j++) {
                             JSONObject object = array1.getJSONObject(j);
                             Log.d(TAG, "onResponse11: " + object);

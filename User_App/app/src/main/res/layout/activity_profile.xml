@@ -47,7 +47,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="30dp"
         android:gravity="center"
         android:padding="10dp"
         android:textColor="@color/black"
@@ -88,6 +88,29 @@
         android:gravity="center"
         android:inputType="numberSigned"
         android:maxLength="10"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:padding="10dp"
+        android:text="9999999999"
+        android:textSize="15dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Your home address"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/profileaddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:gravity="center"
         android:textStyle="bold"
         android:textColor="@color/black"
         android:padding="10dp"

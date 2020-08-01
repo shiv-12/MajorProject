@@ -39,6 +39,7 @@ public class itemViewAdapter extends RecyclerView.Adapter<itemViewAdapter.viewhp
         holder.usermobile.setText(model_list.getUsermobile());
         holder.username.setText(model_list.getUsername());
         holder.total_price.setText(model_list.getTotalprice());
+        holder.address.setText(model_list.getAddress());
 
         holder.itemlist.setText("");
         for (int i = 0; i < vegiee.size(); i++) {
@@ -60,7 +61,7 @@ public class itemViewAdapter extends RecyclerView.Adapter<itemViewAdapter.viewhp
     }
 
     public class viewhplderr extends RecyclerView.ViewHolder {
-        TextView itemlist, qty, username, usermobile, total_price;
+        TextView itemlist, qty, username, usermobile, total_price, address;
 
         public viewhplderr(@NonNull View itemView) {
             super(itemView);
@@ -69,6 +70,7 @@ public class itemViewAdapter extends RecyclerView.Adapter<itemViewAdapter.viewhp
             username = itemView.findViewById(R.id.username);
             usermobile = itemView.findViewById(R.id.usermobile);
             total_price = itemView.findViewById(R.id.totalamoun);
+            address = itemView.findViewById(R.id.address);
         }
     }
 }

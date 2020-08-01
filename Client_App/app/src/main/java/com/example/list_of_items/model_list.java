@@ -7,10 +7,18 @@ public class model_list {
 
     List<String> vegiee_name = new ArrayList<>();
     List<String> qty = new ArrayList<>();
-    String username, usermobile,totalprice;
+    String username, usermobile,totalprice,address;
 
     public String getTotalprice() {
         return totalprice;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
     }
 
     public void setTotalprice(String totalprice) {
