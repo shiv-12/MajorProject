@@ -28,6 +28,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     public static final String COLUMN_PRICE = "price";
     public static final String COLUMN_DESC = "description";
     public static final String COLUMN_NAME = "product_name";
+    public static final String COLUMN_UNIT = "unit";
 
     public static final String USER_TABLE = "user_info";
     public static final String USER_NAME = "user_name";
@@ -44,7 +45,8 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase db) {
         this.db = db;
         db.execSQL("CREATE TABLE " + CART_TABLE + " (" + COLUMN_ID + " INTEGER, " + COLUMN_QTY + " DOUBLE, "
-                + COLUMN_IMAGE + " TEXT, " + COLUMN_PRICE + " DOUBLE, " + COLUMN_DESC + " TEXT, " + COLUMN_NAME + " TEXT);");
+                + COLUMN_IMAGE + " TEXT, " + COLUMN_PRICE + " DOUBLE, " + COLUMN_DESC + " TEXT, " + COLUMN_NAME + " TEXT,"+COLUMN_UNIT +" TEXT);");
+
         db.execSQL("CREATE TABLE " + USER_TABLE + "( " + USER_NAME + " TEXT, " + USER_MOBILE + " TEXT ," + USER_ADDRESS + " TEXT);");
         Log.d(TAG, "onCreate: table created !");
 
@@ -79,6 +81,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
             hashMap.put(COLUMN_PRICE, cursor.getString(cursor.getColumnIndex(COLUMN_PRICE)));
             hashMap.put(COLUMN_DESC, cursor.getString(cursor.getColumnIndex(COLUMN_DESC)));
             hashMap.put(COLUMN_NAME, cursor.getString(cursor.getColumnIndex(COLUMN_NAME)));
+            hashMap.put(COLUMN_UNIT,cursor.getString(cursor.getColumnIndex(COLUMN_UNIT)));
             map.add(hashMap);
             cursor.moveToNext();
         }
@@ -123,6 +126,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
             values.put(COLUMN_PRICE, map.get("price"));
             values.put(COLUMN_DESC, map.get("description"));
             values.put(COLUMN_NAME, map.get("product_name"));
+            values.put(COLUMN_UNIT,map.get("unit"));
 
             db.insert(CART_TABLE, null, values);
             Log.d(TAG, "setdatarow: one row inserted !");

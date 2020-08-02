@@ -171,6 +171,7 @@ public class MainActivity extends AppCompatActivity {
                         model.setDesc(obj.getString("product_description"));
                         model.setPrice(obj.getString("product_price"));
                         model.setImage(obj.getString("product_image"));
+                        model.setUnit(obj.getString("unit"));
                         model.setId(obj.getString("product_id"));
                         list.add(model);
 

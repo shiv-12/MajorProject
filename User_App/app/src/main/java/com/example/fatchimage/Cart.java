@@ -87,6 +87,7 @@ public class Cart extends AppCompatActivity {
             classs.setDesc(maps.get(i).get("description"));
             classs.setName(maps.get(i).get("product_name"));
             classs.setQty(maps.get(i).get("qty"));
+            classs.setUnit(maps.get(i).get("unit"));
             list.add(classs);
 
         }
@@ -169,6 +170,7 @@ public class Cart extends AppCompatActivity {
                     obj.put("product_name", maps.get(i).get("product_name"));
                     obj.put("qty", maps.get(i).get("qty"));
                     obj.put("price", maps.get(i).get("price"));
+                    obj.put("unit",maps.get(i).get("unit"));
                     array.put(obj);
 
                 } catch (JSONException e) {

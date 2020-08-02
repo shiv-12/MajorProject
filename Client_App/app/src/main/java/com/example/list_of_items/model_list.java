@@ -7,6 +7,7 @@ public class model_list {
 
     List<String> vegiee_name = new ArrayList<>();
     List<String> qty = new ArrayList<>();
+    List<String> unit = new ArrayList<>();
     String username, usermobile,totalprice,address;
 
     public String getTotalprice() {
@@ -16,6 +17,18 @@ public class model_list {
     public String getAddress() {
         return address;
     }
+
+
+
+    public List<String> getUnit() {
+        return unit;
+    }
+
+    public void setUnit(String unit) {
+        this.unit.add(unit);
+    }
+
+
 
     public void setAddress(String address) {
         this.address = address;

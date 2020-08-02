@@ -55,6 +55,7 @@ public class recycleradapter extends RecyclerView.Adapter<recycleradapter.viewho
         holder.name.setText(obj.getName());
         holder.desc.setText(obj.getDesc());
         holder.price.setText(obj.getPrice());
+        holder.unit.setText(obj.getUnit());
         Glide.with(contextl).asBitmap().load("https://shivam7898337488.000webhostapp.com/productimg/" + obj.getImage()).into(holder.image);
 
 
@@ -67,7 +68,7 @@ public class recycleradapter extends RecyclerView.Adapter<recycleradapter.viewho
 
     public class viewholderr extends RecyclerView.ViewHolder {
         ImageView image, plus, minus;
-        TextView name, desc, price, qty, update;
+        TextView name, desc, price, qty, update,unit;
         LinearLayout plusminuslayout, addlayout;
 
 
@@ -79,6 +80,7 @@ public class recycleradapter extends RecyclerView.Adapter<recycleradapter.viewho
             name = itemView.findViewById(R.id.tv_subcat_title);
             desc = itemView.findViewById(R.id.tv_subcat_desc);
             price = itemView.findViewById(R.id.mrpprize);
+            unit = itemView.findViewById(R.id.unit);
             plus = itemView.findViewById(R.id.plus);
             minus = itemView.findViewById(R.id.minus);
             qty = itemView.findViewById(R.id.qty);
@@ -145,6 +147,7 @@ public class recycleradapter extends RecyclerView.Adapter<recycleradapter.viewho
                         params.put("description", list.get(possitio).getDesc());
                         params.put("price", list.get(possitio).getPrice());
                         params.put("product_image", list.get(possitio).getImage());
+                        params.put("unit",list.get(possitio).getUnit());
 
 //                        if (dbcart.isInCart(list.get(possitio).getId())) {
 //                            Toast.makeText(contextl, "data present already !", Toast.LENGTH_LONG).show();

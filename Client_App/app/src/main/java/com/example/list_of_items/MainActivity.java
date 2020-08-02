@@ -71,8 +71,11 @@ public class MainActivity extends AppCompatActivity {
                             String productname = object.getString("product_name");
                             String qty = object.getString("qty");
                             String price = object.getString("price");
+                            String unit = object.getString("unit");
+
                             model_list.setVegiee_name(productname);
                             model_list.setQty(qty);
+                            model_list.setUnit(unit);
 
                             Log.d(TAG, "object: " + productname + "  " + qty + "  " + price + "  ");
                         }

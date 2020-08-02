@@ -35,6 +35,7 @@ public class itemViewAdapter extends RecyclerView.Adapter<itemViewAdapter.viewhp
         model_list model_list = list.get(position);
         List<String> vegiee = model_list.getVegiee_name();
         List<String> qtyy = model_list.getQty();
+        List<String> unit  = model_list.getUnit();
 
         holder.usermobile.setText(model_list.getUsermobile());
         holder.username.setText(model_list.getUsername());
@@ -48,7 +49,7 @@ public class itemViewAdapter extends RecyclerView.Adapter<itemViewAdapter.viewhp
         }
         holder.qty.setText("");
         for (int i = 0; i < qtyy.size(); i++) {
-            String qt = qtyy.get(i) + "\n";
+            String qt = qtyy.get(i) +"  "+ unit.get(i) + "\n";
             holder.qty.append(qt);
         }
 

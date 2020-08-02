@@ -48,6 +48,7 @@ public class cartAdapter extends RecyclerView.Adapter<cartAdapter.viewhosderr> {
         holder.price.setText(obj.getPrice());
         Glide.with(cont).asBitmap().load("https://shivam7898337488.000webhostapp.com/productimg/" + obj.getImage()).into(holder.image);
         holder.mrp.setText(obj.getPrice());
+        holder.unit.setText(obj.getUnit());
         holder.qty.setText(obj.getQty());
         int total = (Integer.valueOf(obj.getPrice()) * Integer.valueOf(obj.getQty()));
         holder.totalprice.setText("" + total);
@@ -63,7 +64,7 @@ public class cartAdapter extends RecyclerView.Adapter<cartAdapter.viewhosderr> {
     public class viewhosderr extends RecyclerView.ViewHolder {
 
         ImageView image,cancelimage;
-        TextView name, desc, price, mrp, qty, update, totalprice;
+        TextView name, desc, price, mrp, qty, update, totalprice,unit;
         LinearLayout addlayout, totallay, mrplay;
 
 
@@ -73,6 +74,7 @@ public class cartAdapter extends RecyclerView.Adapter<cartAdapter.viewhosderr> {
 
             image = itemView.findViewById(R.id.iv_subcat_img);
             name = itemView.findViewById(R.id.tv_subcat_title);
+            unit = itemView.findViewById(R.id.unit);
             desc = itemView.findViewById(R.id.tv_subcat_desc);
             mrp = itemView.findViewById(R.id.mrpprize);
             price = itemView.findViewById(R.id.price);
