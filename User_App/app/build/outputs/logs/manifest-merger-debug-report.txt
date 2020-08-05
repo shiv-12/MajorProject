@@ -13,6 +13,7 @@ MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\shivam\.gradle\caches\tr
 MERGED from [de.hdodenhof:circleimageview:3.0.2] C:\Users\shivam\.gradle\caches\transforms-2\files-2.1\e03ac1761ff2e3e947ad739061068cb3\jetified-circleimageview-3.0.2\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\shivam\.gradle\caches\transforms-2\files-2.1\761c6c80b9f42c6b4d00cc74ba836625\constraintlayout-1.1.3\AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.firebase:firebase-auth:19.3.1] C:\Users\shivam\.gradle\caches\transforms-2\files-2.1\6a061e696eb124871a098c07f4a015d3\jetified-firebase-auth-19.3.1\AndroidManifest.xml:17:1-42:12
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\shivam\.gradle\caches\transforms-2\files-2.1\08fff7b6c33e78fc5483bdf67cf9dc53\legacy-support-v4-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\shivam\.gradle\caches\transforms-2\files-2.1\1574659264d827c6c0063379d608fd7d\recyclerview-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.gms:play-services-auth:18.0.0] C:\Users\shivam\.gradle\caches\transforms-2\files-2.1\4bca800f8161cd29b59b3bb152859f0c\jetified-play-services-auth-18.0.0\AndroidManifest.xml:17:1-39:12
 MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] C:\Users\shivam\.gradle\caches\transforms-2\files-2.1\accfb5fbb56899697723221499c34529\jetified-gifdecoder-4.11.0\AndroidManifest.xml:2:1-11:12
@@ -31,6 +32,7 @@ MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\shivam\.grad
 MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\shivam\.gradle\caches\transforms-2\files-2.1\0a05eb1d35f4f3c45c6c3017541af87a\drawerlayout-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\shivam\.gradle\caches\transforms-2\files-2.1\277020f86f91c25102aef20906789c74\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.transition:transition:1.0.0] C:\Users\shivam\.gradle\caches\transforms-2\files-2.1\4cec93876459bce8b51d0db8595dc196\transition-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.media:media:1.0.0] C:\Users\shivam\.gradle\caches\transforms-2\files-2.1\be01c47d354d50eda38018c1790eeca6\media-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\shivam\.gradle\caches\transforms-2\files-2.1\12c60d1d9d8740ab9472d905160483f6\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\shivam\.gradle\caches\transforms-2\files-2.1\0bd482385e00cbd8c209e26a3439525d\coordinatorlayout-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\shivam\.gradle\caches\transforms-2\files-2.1\fb0b1eb33205bb46615b97e49173533a\slidingpanelayout-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -123,30 +125,30 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\sh
 		ADDED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:8:9-35
 	android:theme
 		ADDED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:13:9-51
-activity#com.example.fatchimage.profile
+activity#com.example.fatchimage.Activity.profile
 ADDED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:14:9-16:52
 	android:screenOrientation
 		ADDED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:16:13-49
 	android:name
-		ADDED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:15:13-36
-activity#com.example.fatchimage.otpScreen
+		ADDED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:15:13-45
+activity#com.example.fatchimage.Activity.otpScreen
 ADDED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:17:9-19:52
 	android:screenOrientation
 		ADDED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:19:13-49
 	android:name
-		ADDED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:18:13-38
-activity#com.example.fatchimage.sign_in
+		ADDED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:18:13-47
+activity#com.example.fatchimage.Activity.sign_in
 ADDED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:20:9-22:52
 	android:screenOrientation
 		ADDED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:22:13-49
 	android:name
-		ADDED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:21:13-36
-activity#com.example.fatchimage.SplashScreen
+		ADDED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:21:13-45
+activity#com.example.fatchimage.Activity.SplashScreen
 ADDED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:23:9-31:20
 	android:screenOrientation
 		ADDED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:25:13-49
 	android:name
-		ADDED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:24:13-41
+		ADDED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:24:13-50
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
 ADDED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:26:13-30:29
 action#android.intent.action.MAIN
@@ -157,18 +159,18 @@ category#android.intent.category.LAUNCHER
 ADDED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:29:17-77
 	android:name
 		ADDED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:29:27-74
-activity#com.example.fatchimage.Cart
+activity#com.example.fatchimage.Activity.Cart
 ADDED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:32:9-34:52
 	android:screenOrientation
 		ADDED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:34:13-49
 	android:name
-		ADDED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:33:13-33
-activity#com.example.fatchimage.MainActivity
+		ADDED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:33:13-42
+activity#com.example.fatchimage.Activity.MainActivity
 ADDED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:35:9-37:52
 	android:screenOrientation
 		ADDED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:37:13-49
 	android:name
-		ADDED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:36:13-41
+		ADDED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:36:13-50
 meta-data#preloaded_fonts
 ADDED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:38:9-40:57
 	android:resource
@@ -197,6 +199,8 @@ MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\shivam\.
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\shivam\.gradle\caches\transforms-2\files-2.1\761c6c80b9f42c6b4d00cc74ba836625\constraintlayout-1.1.3\AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.firebase:firebase-auth:19.3.1] C:\Users\shivam\.gradle\caches\transforms-2\files-2.1\6a061e696eb124871a098c07f4a015d3\jetified-firebase-auth-19.3.1\AndroidManifest.xml:21:5-44
 MERGED from [com.google.firebase:firebase-auth:19.3.1] C:\Users\shivam\.gradle\caches\transforms-2\files-2.1\6a061e696eb124871a098c07f4a015d3\jetified-firebase-auth-19.3.1\AndroidManifest.xml:21:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\shivam\.gradle\caches\transforms-2\files-2.1\08fff7b6c33e78fc5483bdf67cf9dc53\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\shivam\.gradle\caches\transforms-2\files-2.1\08fff7b6c33e78fc5483bdf67cf9dc53\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\shivam\.gradle\caches\transforms-2\files-2.1\1574659264d827c6c0063379d608fd7d\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\shivam\.gradle\caches\transforms-2\files-2.1\1574659264d827c6c0063379d608fd7d\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.android.gms:play-services-auth:18.0.0] C:\Users\shivam\.gradle\caches\transforms-2\files-2.1\4bca800f8161cd29b59b3bb152859f0c\jetified-play-services-auth-18.0.0\AndroidManifest.xml:20:5-44
@@ -233,6 +237,8 @@ MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\shivam\.g
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\shivam\.gradle\caches\transforms-2\files-2.1\277020f86f91c25102aef20906789c74\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.transition:transition:1.0.0] C:\Users\shivam\.gradle\caches\transforms-2\files-2.1\4cec93876459bce8b51d0db8595dc196\transition-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.transition:transition:1.0.0] C:\Users\shivam\.gradle\caches\transforms-2\files-2.1\4cec93876459bce8b51d0db8595dc196\transition-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] C:\Users\shivam\.gradle\caches\transforms-2\files-2.1\be01c47d354d50eda38018c1790eeca6\media-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] C:\Users\shivam\.gradle\caches\transforms-2\files-2.1\be01c47d354d50eda38018c1790eeca6\media-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\shivam\.gradle\caches\transforms-2\files-2.1\12c60d1d9d8740ab9472d905160483f6\viewpager-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\shivam\.gradle\caches\transforms-2\files-2.1\12c60d1d9d8740ab9472d905160483f6\viewpager-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\shivam\.gradle\caches\transforms-2\files-2.1\0bd482385e00cbd8c209e26a3439525d\coordinatorlayout-1.0.0\AndroidManifest.xml:20:5-44

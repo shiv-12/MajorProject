@@ -8,7 +8,7 @@
     android:gravity="center"
     android:orientation="vertical"
     android:padding="20dp"
-    tools:context=".profile">
+    tools:context=".Activity.profile">
 
     <TextView
         style="@style/appname"

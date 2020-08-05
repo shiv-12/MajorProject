@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/white"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".Activity.MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -19,17 +19,25 @@
         android:orientation="horizontal"
         android:weightSum="4">
 
-        <EditText
-            android:id="@+id/searchedit"
+        <!--        <EditText-->
+        <!--            android:id="@+id/searchedit"-->
+        <!--            android:layout_width="0dp"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_weight="3"-->
+        <!--            android:background="@drawable/button"-->
+        <!--            android:drawableRight="@drawable/ic_search_"-->
+        <!--            android:fontFamily="@font/lato"-->
+        <!--            android:hint="Search Vegiee"-->
+        <!--            android:padding="10dp"-->
+        <!--            android:textSize="12dp" />-->
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/searchbox"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="3"
             android:background="@drawable/button"
-            android:drawableRight="@drawable/ic_search_"
-            android:fontFamily="@font/lato"
-            android:hint="Search Vegiee"
-            android:padding="10dp"
-            android:textSize="12dp" />
+ />
 
         <RelativeLayout
             android:id="@+id/cart"
@@ -76,14 +84,14 @@
     </LinearLayout>
 
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerview"
+    <RelativeLayout
+        android:id="@+id/framelay"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginBottom="10dp"
-        android:layout_weight="1" />
+        android:layout_weight="1">
+
+    </RelativeLayout>
+
 
     <!--    <Button-->
     <!--        android:id="@+id/cart"-->

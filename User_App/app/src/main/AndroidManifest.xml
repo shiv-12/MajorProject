@@ -12,16 +12,16 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme.fullscreen">
         <activity
-            android:name=".profile"
+            android:name=".Activity.profile"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".otpScreen"
+            android:name=".Activity.otpScreen"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".sign_in"
+            android:name=".Activity.sign_in"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".SplashScreen"
+            android:name=".Activity.SplashScreen"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -30,10 +30,10 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Cart"
+            android:name=".Activity.Cart"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".MainActivity"
+            android:name=".Activity.MainActivity"
             android:screenOrientation="portrait" />
         <meta-data
             android:name="preloaded_fonts"

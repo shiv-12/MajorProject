@@ -12,6 +12,10 @@
         "source": "C:\\Users\\shivam\\AndroidStudioProjects\\vegieeGitHub\\MajorProject\\User_App\\app\\src\\main\\res\\font\\lato.xml"
     },
     {
+        "merged": "C:\\Users\\shivam\\AndroidStudioProjects\\vegieeGitHub\\MajorProject\\User_App\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_home.xml.flat",
+        "source": "C:\\Users\\shivam\\AndroidStudioProjects\\vegieeGitHub\\MajorProject\\User_App\\app\\src\\main\\res\\layout\\fragment_home.xml"
+    },
+    {
         "merged": "C:\\Users\\shivam\\AndroidStudioProjects\\vegieeGitHub\\MajorProject\\User_App\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
         "source": "C:\\Users\\shivam\\AndroidStudioProjects\\vegieeGitHub\\MajorProject\\User_App\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
@@ -86,6 +90,10 @@
     {
         "merged": "C:\\Users\\shivam\\AndroidStudioProjects\\vegieeGitHub\\MajorProject\\User_App\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_profile.xml.flat",
         "source": "C:\\Users\\shivam\\AndroidStudioProjects\\vegieeGitHub\\MajorProject\\User_App\\app\\src\\main\\res\\layout\\activity_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\shivam\\AndroidStudioProjects\\vegieeGitHub\\MajorProject\\User_App\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_search.xml.flat",
+        "source": "C:\\Users\\shivam\\AndroidStudioProjects\\vegieeGitHub\\MajorProject\\User_App\\app\\src\\main\\res\\layout\\fragment_search.xml"
     },
     {
         "merged": "C:\\Users\\shivam\\AndroidStudioProjects\\vegieeGitHub\\MajorProject\\User_App\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_cart.xml.flat",

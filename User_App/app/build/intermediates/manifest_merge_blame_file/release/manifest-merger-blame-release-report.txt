@@ -6,85 +6,85 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="23"
-8-->C:\Users\shivam\AndroidStudioProjects\vegieeGitLab\my-vegiee-app\User_App\app\src\main\AndroidManifest.xml
+8-->C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="29" />
-9-->C:\Users\shivam\AndroidStudioProjects\vegieeGitLab\my-vegiee-app\User_App\app\src\main\AndroidManifest.xml
+9-->C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.INTERNET" />
-11-->C:\Users\shivam\AndroidStudioProjects\vegieeGitLab\my-vegiee-app\User_App\app\src\main\AndroidManifest.xml:5:5-67
-11-->C:\Users\shivam\AndroidStudioProjects\vegieeGitLab\my-vegiee-app\User_App\app\src\main\AndroidManifest.xml:5:22-64
+11-->C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:5:5-67
+11-->C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:5:22-64
 12
 13    <application
-13-->C:\Users\shivam\AndroidStudioProjects\vegieeGitLab\my-vegiee-app\User_App\app\src\main\AndroidManifest.xml:7:5-41:19
+13-->C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:7:5-41:19
 14        android:allowBackup="true"
-14-->C:\Users\shivam\AndroidStudioProjects\vegieeGitLab\my-vegiee-app\User_App\app\src\main\AndroidManifest.xml:8:9-35
+14-->C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:8:9-35
 15        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 15-->[androidx.core:core:1.1.0] C:\Users\shivam\.gradle\caches\transforms-2\files-2.1\d8e6145ebd5f6e1099b739484795a4bd\core-1.1.0\AndroidManifest.xml:24:18-86
 16        android:extractNativeLibs="false"
 17        android:icon="@mipmap/ic_launcher"
-17-->C:\Users\shivam\AndroidStudioProjects\vegieeGitLab\my-vegiee-app\User_App\app\src\main\AndroidManifest.xml:9:9-43
+17-->C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:9:9-43
 18        android:label="@string/app_name"
-18-->C:\Users\shivam\AndroidStudioProjects\vegieeGitLab\my-vegiee-app\User_App\app\src\main\AndroidManifest.xml:10:9-41
+18-->C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:10:9-41
 19        android:roundIcon="@mipmap/ic_launcher_round"
-19-->C:\Users\shivam\AndroidStudioProjects\vegieeGitLab\my-vegiee-app\User_App\app\src\main\AndroidManifest.xml:11:9-54
+19-->C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:11:9-54
 20        android:supportsRtl="true"
-20-->C:\Users\shivam\AndroidStudioProjects\vegieeGitLab\my-vegiee-app\User_App\app\src\main\AndroidManifest.xml:12:9-35
+20-->C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:12:9-35
 21        android:theme="@style/AppTheme.fullscreen" >
-21-->C:\Users\shivam\AndroidStudioProjects\vegieeGitLab\my-vegiee-app\User_App\app\src\main\AndroidManifest.xml:13:9-51
+21-->C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:13:9-51
 22        <activity
-22-->C:\Users\shivam\AndroidStudioProjects\vegieeGitLab\my-vegiee-app\User_App\app\src\main\AndroidManifest.xml:14:9-16:52
-23            android:name="com.example.fatchimage.profile"
-23-->C:\Users\shivam\AndroidStudioProjects\vegieeGitLab\my-vegiee-app\User_App\app\src\main\AndroidManifest.xml:15:13-36
+22-->C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:14:9-16:52
+23            android:name="com.example.fatchimage.Activity.profile"
+23-->C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:15:13-45
 24            android:screenOrientation="portrait" />
-24-->C:\Users\shivam\AndroidStudioProjects\vegieeGitLab\my-vegiee-app\User_App\app\src\main\AndroidManifest.xml:16:13-49
+24-->C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:16:13-49
 25        <activity
-25-->C:\Users\shivam\AndroidStudioProjects\vegieeGitLab\my-vegiee-app\User_App\app\src\main\AndroidManifest.xml:17:9-19:52
-26            android:name="com.example.fatchimage.otpScreen"
-26-->C:\Users\shivam\AndroidStudioProjects\vegieeGitLab\my-vegiee-app\User_App\app\src\main\AndroidManifest.xml:18:13-38
+25-->C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:17:9-19:52
+26            android:name="com.example.fatchimage.Activity.otpScreen"
+26-->C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:18:13-47
 27            android:screenOrientation="portrait" />
-27-->C:\Users\shivam\AndroidStudioProjects\vegieeGitLab\my-vegiee-app\User_App\app\src\main\AndroidManifest.xml:19:13-49
+27-->C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:19:13-49
 28        <activity
-28-->C:\Users\shivam\AndroidStudioProjects\vegieeGitLab\my-vegiee-app\User_App\app\src\main\AndroidManifest.xml:20:9-22:52
-29            android:name="com.example.fatchimage.sign_in"
-29-->C:\Users\shivam\AndroidStudioProjects\vegieeGitLab\my-vegiee-app\User_App\app\src\main\AndroidManifest.xml:21:13-36
+28-->C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:20:9-22:52
+29            android:name="com.example.fatchimage.Activity.sign_in"
+29-->C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:21:13-45
 30            android:screenOrientation="portrait" />
-30-->C:\Users\shivam\AndroidStudioProjects\vegieeGitLab\my-vegiee-app\User_App\app\src\main\AndroidManifest.xml:22:13-49
+30-->C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:22:13-49
 31        <activity
-31-->C:\Users\shivam\AndroidStudioProjects\vegieeGitLab\my-vegiee-app\User_App\app\src\main\AndroidManifest.xml:23:9-31:20
-32            android:name="com.example.fatchimage.SplashScreen"
-32-->C:\Users\shivam\AndroidStudioProjects\vegieeGitLab\my-vegiee-app\User_App\app\src\main\AndroidManifest.xml:24:13-41
+31-->C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:23:9-31:20
+32            android:name="com.example.fatchimage.Activity.SplashScreen"
+32-->C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:24:13-50
 33            android:screenOrientation="portrait" >
-33-->C:\Users\shivam\AndroidStudioProjects\vegieeGitLab\my-vegiee-app\User_App\app\src\main\AndroidManifest.xml:25:13-49
+33-->C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:25:13-49
 34            <intent-filter>
-34-->C:\Users\shivam\AndroidStudioProjects\vegieeGitLab\my-vegiee-app\User_App\app\src\main\AndroidManifest.xml:26:13-30:29
+34-->C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:26:13-30:29
 35                <action android:name="android.intent.action.MAIN" />
-35-->C:\Users\shivam\AndroidStudioProjects\vegieeGitLab\my-vegiee-app\User_App\app\src\main\AndroidManifest.xml:27:17-69
-35-->C:\Users\shivam\AndroidStudioProjects\vegieeGitLab\my-vegiee-app\User_App\app\src\main\AndroidManifest.xml:27:25-66
+35-->C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:27:17-69
+35-->C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:27:25-66
 36
 37                <category android:name="android.intent.category.LAUNCHER" />
-37-->C:\Users\shivam\AndroidStudioProjects\vegieeGitLab\my-vegiee-app\User_App\app\src\main\AndroidManifest.xml:29:17-77
-37-->C:\Users\shivam\AndroidStudioProjects\vegieeGitLab\my-vegiee-app\User_App\app\src\main\AndroidManifest.xml:29:27-74
+37-->C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:29:17-77
+37-->C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:29:27-74
 38            </intent-filter>
 39        </activity>
 40        <activity
-40-->C:\Users\shivam\AndroidStudioProjects\vegieeGitLab\my-vegiee-app\User_App\app\src\main\AndroidManifest.xml:32:9-34:52
-41            android:name="com.example.fatchimage.Cart"
-41-->C:\Users\shivam\AndroidStudioProjects\vegieeGitLab\my-vegiee-app\User_App\app\src\main\AndroidManifest.xml:33:13-33
+40-->C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:32:9-34:52
+41            android:name="com.example.fatchimage.Activity.Cart"
+41-->C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:33:13-42
 42            android:screenOrientation="portrait" />
-42-->C:\Users\shivam\AndroidStudioProjects\vegieeGitLab\my-vegiee-app\User_App\app\src\main\AndroidManifest.xml:34:13-49
+42-->C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:34:13-49
 43        <activity
-43-->C:\Users\shivam\AndroidStudioProjects\vegieeGitLab\my-vegiee-app\User_App\app\src\main\AndroidManifest.xml:35:9-37:52
-44            android:name="com.example.fatchimage.MainActivity"
-44-->C:\Users\shivam\AndroidStudioProjects\vegieeGitLab\my-vegiee-app\User_App\app\src\main\AndroidManifest.xml:36:13-41
+43-->C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:35:9-37:52
+44            android:name="com.example.fatchimage.Activity.MainActivity"
+44-->C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:36:13-50
 45            android:screenOrientation="portrait" />
-45-->C:\Users\shivam\AndroidStudioProjects\vegieeGitLab\my-vegiee-app\User_App\app\src\main\AndroidManifest.xml:37:13-49
+45-->C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:37:13-49
 46
 47        <meta-data
-47-->C:\Users\shivam\AndroidStudioProjects\vegieeGitLab\my-vegiee-app\User_App\app\src\main\AndroidManifest.xml:38:9-40:57
+47-->C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:38:9-40:57
 48            android:name="preloaded_fonts"
-48-->C:\Users\shivam\AndroidStudioProjects\vegieeGitLab\my-vegiee-app\User_App\app\src\main\AndroidManifest.xml:39:13-43
+48-->C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:39:13-43
 49            android:resource="@array/preloaded_fonts" />
-49-->C:\Users\shivam\AndroidStudioProjects\vegieeGitLab\my-vegiee-app\User_App\app\src\main\AndroidManifest.xml:40:13-54
+49-->C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:40:13-54
 50
 51        <activity
 51-->[com.google.firebase:firebase-auth:19.3.1] C:\Users\shivam\.gradle\caches\transforms-2\files-2.1\6a061e696eb124871a098c07f4a015d3\jetified-firebase-auth-19.3.1\AndroidManifest.xml:24:9-31:50

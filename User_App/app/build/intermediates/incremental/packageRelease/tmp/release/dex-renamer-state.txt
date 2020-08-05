@@ -1,4 +1,4 @@
-#Fri Jul 17 22:15:59 IST 2020
-base.0=C\:\\Users\\shivam\\AndroidStudioProjects\\vegieeGitLab\\my-vegiee-app\\User_App\\app\\build\\intermediates\\dex\\release\\out\\classes.dex
+#Wed Aug 05 22:53:42 IST 2020
+base.0=C\:\\Users\\shivam\\AndroidStudioProjects\\vegieeGitHub\\MajorProject\\User_App\\app\\build\\intermediates\\dex\\release\\out\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex

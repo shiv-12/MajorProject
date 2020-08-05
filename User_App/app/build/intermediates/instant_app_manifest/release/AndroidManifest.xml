@@ -21,16 +21,16 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme.fullscreen" >
         <activity
-            android:name="com.example.fatchimage.profile"
+            android:name="com.example.fatchimage.Activity.profile"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.example.fatchimage.otpScreen"
+            android:name="com.example.fatchimage.Activity.otpScreen"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.example.fatchimage.sign_in"
+            android:name="com.example.fatchimage.Activity.sign_in"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.example.fatchimage.SplashScreen"
+            android:name="com.example.fatchimage.Activity.SplashScreen"
             android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -39,10 +39,10 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.fatchimage.Cart"
+            android:name="com.example.fatchimage.Activity.Cart"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.example.fatchimage.MainActivity"
+            android:name="com.example.fatchimage.Activity.MainActivity"
             android:screenOrientation="portrait" />
 
         <meta-data

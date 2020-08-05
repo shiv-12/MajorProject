@@ -35,26 +35,26 @@
 23-->C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:13:9-51
 24        <activity
 24-->C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:14:9-16:52
-25            android:name="com.example.fatchimage.profile"
-25-->C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:15:13-36
+25            android:name="com.example.fatchimage.Activity.profile"
+25-->C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:15:13-45
 26            android:screenOrientation="portrait" />
 26-->C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:16:13-49
 27        <activity
 27-->C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:17:9-19:52
-28            android:name="com.example.fatchimage.otpScreen"
-28-->C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:18:13-38
+28            android:name="com.example.fatchimage.Activity.otpScreen"
+28-->C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:18:13-47
 29            android:screenOrientation="portrait" />
 29-->C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:19:13-49
 30        <activity
 30-->C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:20:9-22:52
-31            android:name="com.example.fatchimage.sign_in"
-31-->C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:21:13-36
+31            android:name="com.example.fatchimage.Activity.sign_in"
+31-->C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:21:13-45
 32            android:screenOrientation="portrait" />
 32-->C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:22:13-49
 33        <activity
 33-->C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:23:9-31:20
-34            android:name="com.example.fatchimage.SplashScreen"
-34-->C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:24:13-41
+34            android:name="com.example.fatchimage.Activity.SplashScreen"
+34-->C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:24:13-50
 35            android:screenOrientation="portrait" >
 35-->C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:25:13-49
 36            <intent-filter>
@@ -70,14 +70,14 @@
 41        </activity>
 42        <activity
 42-->C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:32:9-34:52
-43            android:name="com.example.fatchimage.Cart"
-43-->C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:33:13-33
+43            android:name="com.example.fatchimage.Activity.Cart"
+43-->C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:33:13-42
 44            android:screenOrientation="portrait" />
 44-->C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:34:13-49
 45        <activity
 45-->C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:35:9-37:52
-46            android:name="com.example.fatchimage.MainActivity"
-46-->C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:36:13-41
+46            android:name="com.example.fatchimage.Activity.MainActivity"
+46-->C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:36:13-50
 47            android:screenOrientation="portrait" />
 47-->C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:37:13-49
 48
