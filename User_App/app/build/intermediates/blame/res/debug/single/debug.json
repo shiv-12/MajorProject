@@ -88,6 +88,10 @@
         "source": "C:\\Users\\shivam\\AndroidStudioProjects\\vegieeGitHub\\MajorProject\\User_App\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     },
     {
+        "merged": "C:\\Users\\shivam\\AndroidStudioProjects\\vegieeGitHub\\MajorProject\\User_App\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_checkout.xml.flat",
+        "source": "C:\\Users\\shivam\\AndroidStudioProjects\\vegieeGitHub\\MajorProject\\User_App\\app\\src\\main\\res\\layout\\activity_checkout.xml"
+    },
+    {
         "merged": "C:\\Users\\shivam\\AndroidStudioProjects\\vegieeGitHub\\MajorProject\\User_App\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_profile.xml.flat",
         "source": "C:\\Users\\shivam\\AndroidStudioProjects\\vegieeGitHub\\MajorProject\\User_App\\app\\src\\main\\res\\layout\\activity_profile.xml"
     },
@@ -132,6 +136,10 @@
         "source": "C:\\Users\\shivam\\AndroidStudioProjects\\vegieeGitHub\\MajorProject\\User_App\\app\\src\\main\\res\\font\\bad_script.xml"
     },
     {
+        "merged": "C:\\Users\\shivam\\AndroidStudioProjects\\vegieeGitHub\\MajorProject\\User_App\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_next.xml.flat",
+        "source": "C:\\Users\\shivam\\AndroidStudioProjects\\vegieeGitHub\\MajorProject\\User_App\\app\\src\\main\\res\\layout\\activity_next.xml"
+    },
+    {
         "merged": "C:\\Users\\shivam\\AndroidStudioProjects\\vegieeGitHub\\MajorProject\\User_App\\app\\build\\intermediates\\res\\merged\\debug\\layout_thankyou_dialog.xml.flat",
         "source": "C:\\Users\\shivam\\AndroidStudioProjects\\vegieeGitHub\\MajorProject\\User_App\\app\\src\\main\\res\\layout\\thankyou_dialog.xml"
     },
@@ -150,6 +158,10 @@
     {
         "merged": "C:\\Users\\shivam\\AndroidStudioProjects\\vegieeGitHub\\MajorProject\\User_App\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
         "source": "C:\\Users\\shivam\\AndroidStudioProjects\\vegieeGitHub\\MajorProject\\User_App\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\shivam\\AndroidStudioProjects\\vegieeGitHub\\MajorProject\\User_App\\app\\build\\intermediates\\res\\merged\\debug\\layout_next_item_layout.xml.flat",
+        "source": "C:\\Users\\shivam\\AndroidStudioProjects\\vegieeGitHub\\MajorProject\\User_App\\app\\src\\main\\res\\layout\\next_item_layout.xml"
     },
     {
         "merged": "C:\\Users\\shivam\\AndroidStudioProjects\\vegieeGitHub\\MajorProject\\User_App\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",

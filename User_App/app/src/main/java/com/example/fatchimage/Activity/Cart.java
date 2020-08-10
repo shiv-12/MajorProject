@@ -6,8 +6,10 @@ import androidx.recyclerview.widget.RecyclerView;
 
 
 import android.app.Dialog;
+import android.content.Intent;
 import android.os.Bundle;
 
+import android.util.Log;
 import android.view.View;
 
 import android.view.Window;
@@ -34,6 +36,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -44,7 +47,7 @@ public class Cart extends AppCompatActivity {
     private RecyclerView recyclerView;
     private List<modelclass> list;
     private cartAdapter adapter;
-    private TextView totalamount, totalitems;
+    private TextView totalamount, totalitems, next, cartcontinueshopping;
     private DatabaseHandler databaseHandler;
     public String totalprice = "1";
     private ArrayList<HashMap<String, String>> maps;
@@ -64,17 +67,20 @@ public class Cart extends AppCompatActivity {
             showdata();
         }
 
-        sendList.setOnClickListener(new View.OnClickListener() {
+
+        next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                senddata();
+                Intent intent = new Intent(Cart.this, Next.class);
+                startActivity(intent);
             }
         });
-        sendList.setOnLongClickListener(new View.OnLongClickListener() {
+        cartcontinueshopping.setOnClickListener(new View.OnClickListener() {
             @Override
-            public boolean onLongClick(View v) {
-                fatchhlist();
-                return true;
+            public void onClick(View v) {
+                Intent intent = new Intent(Cart.this, MainActivity.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
+                startActivity(intent);
             }
         });
 
@@ -139,7 +145,7 @@ public class Cart extends AppCompatActivity {
 
     private void init() {
 
-        sendList = findViewById(R.id.sendList);
+//        sendList = findViewById(R.id.sendList);
         recyclerView = findViewById(R.id.recyclervieww);
         recyclerView.setLayoutManager(new LinearLayoutManager(Cart.this, RecyclerView.VERTICAL, false));
         databaseHandler = new DatabaseHandler(Cart.this);
@@ -151,6 +157,8 @@ public class Cart extends AppCompatActivity {
         requestQueue = Volley.newRequestQueue(Cart.this);
         requestQueue1 = Volley.newRequestQueue(Cart.this);
         dialog = new Dialog(Cart.this);
+        next = findViewById(R.id.cartnext);
+        cartcontinueshopping = findViewById(R.id.cartcontinueshopping);
 
 
     }
@@ -173,7 +181,7 @@ public class Cart extends AppCompatActivity {
                     obj.put("product_name", maps.get(i).get("product_name"));
                     obj.put("qty", maps.get(i).get("qty"));
                     obj.put("price", maps.get(i).get("price"));
-                    obj.put("unit",maps.get(i).get("unit"));
+                    obj.put("unit", maps.get(i).get("unit"));
                     array.put(obj);
 
                 } catch (JSONException e) {
@@ -182,14 +190,14 @@ public class Cart extends AppCompatActivity {
                 }
 
             }
-            sendordertoserver(array.toString(), username.toString(), usermobile.toString(),userAddress.toString());
+            sendordertoserver(array.toString(), username.toString(), usermobile.toString(), userAddress.toString());
         }
     }
 
-    private void sendordertoserver(final String array, final String username, final String usermobile,final String userAddress) {
+    private void sendordertoserver(final String array, final String username, final String usermobile, final String userAddress) {
         final Loader loader = new Loader(Cart.this);
         loader.startDialog();
-        StringRequest request = new StringRequest(Request.Method.POST,API.LIST_OF_USER, new Response.Listener<String>() {
+        StringRequest request = new StringRequest(Request.Method.POST, API.LIST_OF_USER, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
                 loader.dismiss();
@@ -198,7 +206,7 @@ public class Cart extends AppCompatActivity {
                 cancelimage.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                       dialog.dismiss();
+                        dialog.dismiss();
                     }
                 });
                 dialog.getWindow().setBackgroundDrawableResource(R.color.blacktrans);
