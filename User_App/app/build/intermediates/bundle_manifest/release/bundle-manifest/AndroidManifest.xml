@@ -19,6 +19,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.fullscreen" >
+        <activity android:name="com.example.fatchimage.Activity.Checkout" />
+        <activity android:name="com.example.fatchimage.Activity.Next" />
         <activity
             android:name="com.example.fatchimage.Activity.profile"
             android:screenOrientation="portrait" />

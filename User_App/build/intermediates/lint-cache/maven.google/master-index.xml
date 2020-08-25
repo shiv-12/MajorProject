@@ -22,6 +22,11 @@
   <androidx.cardview/>
   <androidx.collection/>
   <androidx.compose/>
+  <androidx.compose.animation/>
+  <androidx.compose.foundation/>
+  <androidx.compose.material/>
+  <androidx.compose.runtime/>
+  <androidx.compose.ui/>
   <androidx.concurrent/>
   <androidx.constraintlayout/>
   <androidx.contentpager/>
@@ -37,6 +42,7 @@
   <androidx.enterprise/>
   <androidx.exifinterface/>
   <androidx.fragment/>
+  <androidx.games/>
   <androidx.gaming/>
   <androidx.gridlayout/>
   <androidx.heifwriter/>

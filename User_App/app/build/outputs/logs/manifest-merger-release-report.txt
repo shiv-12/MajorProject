@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:2:1-43:12
-INJECTED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:2:1-43:12
-INJECTED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:2:1-43:12
-INJECTED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:2:1-43:12
+ADDED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:2:1-46:12
+INJECTED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:2:1-46:12
+INJECTED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:2:1-46:12
+INJECTED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:2:1-46:12
 MERGED from [com.github.bumptech.glide:glide:4.11.0] C:\Users\shivam\.gradle\caches\transforms-2\files-2.1\5f74fbdf97d5eca2c83cef8651794ab8\jetified-glide-4.11.0\AndroidManifest.xml:2:1-12:12
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\shivam\.gradle\caches\transforms-2\files-2.1\3fe88b0775ad197c3759cb5b3aabc489\material-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.airbnb.android:lottie:3.4.0] C:\Users\shivam\.gradle\caches\transforms-2\files-2.1\4d04c9508675ca69caa69dceea03cc26\jetified-lottie-3.4.0\AndroidManifest.xml:2:1-11:12
@@ -56,20 +56,20 @@ MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\shivam\.gradle\cache
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\shivam\.gradle\caches\transforms-2\files-2.1\e46d1f274ee2854845cc7fdb623ed9d5\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\shivam\.gradle\caches\transforms-2\files-2.1\29e8ae855d93b75add58e65b12d7a94d\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\shivam\.gradle\caches\transforms-2\files-2.1\3af4fd5d73989f30145e307cbcc328a3\core-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
-INJECTED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:2:1-43:12
-INJECTED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:2:1-43:12
-INJECTED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:2:1-43:12
+INJECTED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:2:1-46:12
+INJECTED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:2:1-46:12
+INJECTED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:2:1-46:12
 	package
 		ADDED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:3:5-37
 		INJECTED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:2:1-43:12
+		ADDED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:2:1-46:12
 		INJECTED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:2:1-43:12
+		ADDED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:2:1-46:12
 		INJECTED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:2:11-69
@@ -78,7 +78,7 @@ ADDED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_
 	android:name
 		ADDED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:5:22-64
 application
-ADDED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:7:5-41:19
+ADDED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:7:5-44:19
 MERGED from [com.github.bumptech.glide:glide:4.11.0] C:\Users\shivam\.gradle\caches\transforms-2\files-2.1\5f74fbdf97d5eca2c83cef8651794ab8\jetified-glide-4.11.0\AndroidManifest.xml:10:5-20
 MERGED from [com.github.bumptech.glide:glide:4.11.0] C:\Users\shivam\.gradle\caches\transforms-2\files-2.1\5f74fbdf97d5eca2c83cef8651794ab8\jetified-glide-4.11.0\AndroidManifest.xml:10:5-20
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\shivam\.gradle\caches\transforms-2\files-2.1\3fe88b0775ad197c3759cb5b3aabc489\material-1.0.0\AndroidManifest.xml:22:5-20
@@ -125,58 +125,66 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\sh
 		ADDED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:8:9-35
 	android:theme
 		ADDED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:13:9-51
+activity#com.example.fatchimage.Activity.Checkout
+ADDED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:14:9-64
+	android:name
+		ADDED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:14:19-52
+activity#com.example.fatchimage.Activity.Next
+ADDED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:15:9-51
+	android:name
+		ADDED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:15:19-48
 activity#com.example.fatchimage.Activity.profile
-ADDED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:14:9-16:52
+ADDED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:16:9-18:52
 	android:screenOrientation
-		ADDED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:16:13-49
+		ADDED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:18:13-49
 	android:name
-		ADDED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:15:13-45
+		ADDED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:17:13-45
 activity#com.example.fatchimage.Activity.otpScreen
-ADDED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:17:9-19:52
+ADDED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:19:9-21:52
 	android:screenOrientation
-		ADDED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:19:13-49
+		ADDED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:21:13-49
 	android:name
-		ADDED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:18:13-47
+		ADDED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:20:13-47
 activity#com.example.fatchimage.Activity.sign_in
-ADDED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:20:9-22:52
+ADDED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:22:9-24:52
 	android:screenOrientation
-		ADDED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:22:13-49
+		ADDED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:24:13-49
 	android:name
-		ADDED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:21:13-45
+		ADDED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:23:13-45
 activity#com.example.fatchimage.Activity.SplashScreen
-ADDED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:23:9-31:20
+ADDED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:25:9-33:20
 	android:screenOrientation
-		ADDED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:25:13-49
+		ADDED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:27:13-49
 	android:name
-		ADDED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:24:13-50
+		ADDED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:26:13-50
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:26:13-30:29
+ADDED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:28:13-32:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:27:17-69
+ADDED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:29:17-69
 	android:name
-		ADDED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:27:25-66
+		ADDED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:29:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:29:17-77
+ADDED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:31:17-77
 	android:name
-		ADDED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:29:27-74
+		ADDED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:31:27-74
 activity#com.example.fatchimage.Activity.Cart
-ADDED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:32:9-34:52
+ADDED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:34:9-36:52
 	android:screenOrientation
-		ADDED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:34:13-49
+		ADDED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:36:13-49
 	android:name
-		ADDED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:33:13-42
+		ADDED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:35:13-42
 activity#com.example.fatchimage.Activity.MainActivity
-ADDED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:35:9-37:52
+ADDED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:37:9-39:52
 	android:screenOrientation
-		ADDED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:37:13-49
+		ADDED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:39:13-49
 	android:name
-		ADDED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:36:13-50
+		ADDED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:38:13-50
 meta-data#preloaded_fonts
-ADDED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:38:9-40:57
+ADDED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:41:9-43:57
 	android:resource
-		ADDED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:40:13-54
+		ADDED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:43:13-54
 	android:name
-		ADDED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:39:13-43
+		ADDED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml:42:13-43
 uses-sdk
 INJECTED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\shivam\AndroidStudioProjects\vegieeGitHub\MajorProject\User_App\app\src\main\AndroidManifest.xml
