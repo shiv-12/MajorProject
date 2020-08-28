@@ -1584,7 +1584,7 @@ int layout support_simple_spinner_dropdown_item 0x7f0d004c
 int layout thankyou_dialog 0x7f0d004d
 int mipmap ic_launcher 0x7f0e0000
 int mipmap ic_launcher_round 0x7f0e0001
-int raw animation 0x7f0f0000
+int raw anim 0x7f0f0000
 int string abc_action_bar_home_description 0x7f100000
 int string abc_action_bar_up_description 0x7f100001
 int string abc_action_menu_overflow_description 0x7f100002

@@ -116,12 +116,12 @@
         "source": "C:\\Users\\shivam\\AndroidStudioProjects\\vegieeGitHub\\MajorProject\\User_App\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\shivam\\AndroidStudioProjects\\vegieeGitHub\\MajorProject\\User_App\\app\\build\\intermediates\\res\\merged\\release\\raw_animation.json.flat",
-        "source": "C:\\Users\\shivam\\AndroidStudioProjects\\vegieeGitHub\\MajorProject\\User_App\\app\\src\\main\\res\\raw\\animation.json"
-    },
-    {
         "merged": "C:\\Users\\shivam\\AndroidStudioProjects\\vegieeGitHub\\MajorProject\\User_App\\app\\build\\intermediates\\res\\merged\\release\\layout_activity_checkout.xml.flat",
         "source": "C:\\Users\\shivam\\AndroidStudioProjects\\vegieeGitHub\\MajorProject\\User_App\\app\\src\\main\\res\\layout\\activity_checkout.xml"
+    },
+    {
+        "merged": "C:\\Users\\shivam\\AndroidStudioProjects\\vegieeGitHub\\MajorProject\\User_App\\app\\build\\intermediates\\res\\merged\\release\\raw_anim.json.flat",
+        "source": "C:\\Users\\shivam\\AndroidStudioProjects\\vegieeGitHub\\MajorProject\\User_App\\app\\src\\main\\res\\raw\\anim.json"
     },
     {
         "merged": "C:\\Users\\shivam\\AndroidStudioProjects\\vegieeGitHub\\MajorProject\\User_App\\app\\build\\intermediates\\res\\merged\\release\\layout_fragment_home.xml.flat",
