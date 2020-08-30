@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.ProgressBar;
+import android.widget.TextView;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -30,27 +31,36 @@ public class MainActivity extends AppCompatActivity {
     private String url = "https://shivam7898337488.000webhostapp.com/list_of_item.php";
     private RecyclerView listViewRv;
     private itemViewAdapter adapter;
-    private ProgressBar progressBar;
+    private TextView refresh;
+    Loader loader;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        progressBar = findViewById(R.id.progressbar);
         requestQueue = Volley.newRequestQueue(MainActivity.this);
         listViewRv = findViewById(R.id.listViewRv);
+        refresh = findViewById(R.id.refresh);
+        loader = new Loader(MainActivity.this);
         listViewRv.setLayoutManager(new LinearLayoutManager(MainActivity.this, RecyclerView.VERTICAL, false));
         fatchdata();
+        refresh.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                fatchdata();
+            }
+        });
     }
 
     private void fatchdata() {
-        progressBar.setVisibility(View.VISIBLE);
+
+        loader.startDialog();
         list = new ArrayList<>();
         StringRequest request = new StringRequest(Request.Method.GET, url, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
                 Log.d(TAG, "onResponse22: " + response);
-                progressBar.setVisibility(View.GONE);
+               loader.dismiss();
                 try {
                     JSONArray array = new JSONArray(response);
                     for (int i = 0; i < array.length(); i++) {

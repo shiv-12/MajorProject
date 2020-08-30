@@ -3,6 +3,7 @@ package com.example.fatchimage.Activity;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.SearchView;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -24,7 +25,7 @@ import java.util.HashMap;
 public class MainActivity extends AppCompatActivity {
 
     private SearchView searchView;
-    private TextView cartText;
+    private TextView cartText, gototactt;
     private ImageView profile;
     private RelativeLayout cartredzone, cart;
     private DatabaseHandler dbcart;
@@ -65,6 +66,16 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
+        gototactt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (dbcart.cartall().size() > 0) {
+                    Intent intent = new Intent(MainActivity.this, Cart.class);
+                    startActivity(intent);
+                } else
+                    Toast.makeText(MainActivity.this, "No items present in Cart", Toast.LENGTH_LONG).show();
+            }
+        });
         profile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -88,8 +99,10 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
+
         Fragment fmm = new homeFragment();
-        getSupportFragmentManager().beginTransaction().replace(R.id.framelay, fmm).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.framelay,fmm).commit();
+
     }
 
     private void init() {
@@ -100,6 +113,7 @@ public class MainActivity extends AppCompatActivity {
         dbcart = new DatabaseHandler(MainActivity.this);
         searchView = findViewById(R.id.searchbox);
         frameLayout = findViewById(R.id.framelay);
+        gototactt = findViewById(R.id.gotocartt);
     }
 
     private void fatchuserdata() {

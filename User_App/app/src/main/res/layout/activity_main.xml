@@ -19,25 +19,13 @@
         android:orientation="horizontal"
         android:weightSum="4">
 
-        <!--        <EditText-->
-        <!--            android:id="@+id/searchedit"-->
-        <!--            android:layout_width="0dp"-->
-        <!--            android:layout_height="wrap_content"-->
-        <!--            android:layout_weight="3"-->
-        <!--            android:background="@drawable/button"-->
-        <!--            android:drawableRight="@drawable/ic_search_"-->
-        <!--            android:fontFamily="@font/lato"-->
-        <!--            android:hint="Search Vegiee"-->
-        <!--            android:padding="10dp"-->
-        <!--            android:textSize="12dp" />-->
 
         <androidx.appcompat.widget.SearchView
             android:id="@+id/searchbox"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="3"
-            android:background="@drawable/button"
- />
+            android:background="@drawable/button" />
 
         <RelativeLayout
             android:id="@+id/cart"
@@ -92,22 +80,21 @@
 
     </RelativeLayout>
 
-
-    <!--    <Button-->
-    <!--        android:id="@+id/cart"-->
-    <!--        android:layout_width="match_parent"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        android:layout_gravity="bottom"-->
-    <!--        android:layout_marginLeft="50dp"-->
-    <!--        android:layout_marginRight="50dp"-->
-    <!--        android:layout_marginBottom="15dp"-->
-    <!--        android:background="@drawable/button"-->
-    <!--        android:backgroundTint="#F1F1F1"-->
-    <!--        android:text="Go To Cart "-->
-    <!--        android:textAllCaps="false"-->
-    <!--        android:textColor="#000000"-->
-    <!--        android:textSize="15dp"-->
-    <!--        android:visibility="gone" />-->
+    <TextView
+        android:id="@+id/gotocartt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/addbutton"
+        android:gravity="center"
+        android:padding="12dp"
+        android:text="Go To Cart"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:textStyle="bold" />
 
 
 </LinearLayout>

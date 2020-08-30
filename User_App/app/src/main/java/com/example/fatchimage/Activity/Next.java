@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.fatchimage.Adapter.NextAdapter;
 import com.example.fatchimage.Adapter.cartAdapter;
@@ -26,11 +27,11 @@ public class Next extends AppCompatActivity {
     private List<modelclass> listt;
     private RecyclerView recyclerView;
     private NextAdapter adapter;
-    private String totalamm,finalamm,delivery,itemamm;
+    private String totalamm, finalamm, delivery, itemamm;
     private ArrayList<HashMap<String, String>> maps;
     private static final String TAG = "Next";
     private DatabaseHandler databaseHandler;
-    private TextView nexttotalamount,nextcontinueshopping,more,des,rs,nextdelivery,nextfinal,nextcheckout;
+    private TextView nexttotalamount, nextcontinueshopping, more, des, rs, nextdelivery, nextfinal, nextcheckout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,10 +55,10 @@ public class Next extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Next.this, Checkout.class);
-                intent.putExtra("totalamm",totalamm);
-                intent.putExtra("delivery",delivery);
-                intent.putExtra("finalamm",finalamm);
-                intent.putExtra("itemamm",itemamm);
+                intent.putExtra("totalamm", totalamm);
+                intent.putExtra("delivery", delivery);
+                intent.putExtra("finalamm", finalamm);
+                intent.putExtra("itemamm", itemamm);
                 startActivity(intent);
             }
         });
@@ -88,9 +89,8 @@ public class Next extends AppCompatActivity {
         nexttotalamount.setText(String.valueOf(p));
         totalamm = String.valueOf(p);
         itemamm = String.valueOf(listt.size());
-        int moree = 200-p;
-        if (moree<=0)
-        {
+        int moree = 200 - p;
+        if (moree <= 0) {
             des.setVisibility(View.GONE);
             rs.setVisibility(View.GONE);
             more.setText("Hurry!  You Got Free delivery");
@@ -99,12 +99,11 @@ public class Next extends AppCompatActivity {
             finalamm = String.valueOf(p);
             delivery = String.valueOf(0);
 
-        }
-        else {
+        } else {
             more.setText(String.valueOf(moree));
             nextdelivery.setText("20");
-            nextfinal.setText(String.valueOf(p+20));
-            finalamm = String.valueOf(p+20);
+            nextfinal.setText(String.valueOf(p + 20));
+            finalamm = String.valueOf(p + 20);
             delivery = String.valueOf(20);
         }
 

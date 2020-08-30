@@ -16,6 +16,7 @@ import android.view.Window;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
@@ -71,8 +72,14 @@ public class Cart extends AppCompatActivity {
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Cart.this, Next.class);
-                startActivity(intent);
+                if (databaseHandler.cartall().size() > 0)
+                {
+                    Intent intent = new Intent(Cart.this, Next.class);
+                    startActivity(intent);
+                }
+                else
+                    Toast.makeText(Cart.this, "your cart is empty", Toast.LENGTH_SHORT).show();
+
             }
         });
         cartcontinueshopping.setOnClickListener(new View.OnClickListener() {

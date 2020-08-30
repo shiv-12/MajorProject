@@ -56,6 +56,9 @@ public class searchFragment extends Fragment {
     }
 
 
+
+
+
     private void init(View view) {
         recyclerView = view.findViewById(R.id.searchRv);
         requestQueue = Volley.newRequestQueue(getContext());

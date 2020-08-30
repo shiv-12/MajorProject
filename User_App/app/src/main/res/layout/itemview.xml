@@ -20,13 +20,18 @@
             android:layout_width="95dp"
             android:layout_height="95dp"
             android:layout_gravity="center"
-            android:layout_margin="10dp"
+
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
             android:scaleType="fitCenter" />
 
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:layout_marginRight="5dp"
             android:gravity="center_vertical"
             android:orientation="vertical">
 
@@ -43,7 +48,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
-                android:maxLines="1"
                 android:text="TextView"
                 android:textColor="@color/black"
                 android:textSize="13dp" />
@@ -58,7 +62,7 @@
                 <TextView
 
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:text="MRP - "
                     android:textColor="@color/black"
                     android:textSize="13dp" />

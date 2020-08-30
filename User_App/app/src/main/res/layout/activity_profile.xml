@@ -11,10 +11,10 @@
     tools:context=".Activity.profile">
 
     <TextView
-        style="@style/appname"
+        android:theme="@style/appname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Vegiee"
+        android:text="@string/app_name"
         android:textColor="@color/black"
         android:textSize="30sp" />
 
