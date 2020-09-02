@@ -174,5 +174,9 @@
     {
         "merged": "C:\\Users\\shivam\\AndroidStudioProjects\\vegieeGitHub\\MajorProject\\User_App\\app\\build\\intermediates\\res\\merged\\release\\layout_activity_splash_screen.xml.flat",
         "source": "C:\\Users\\shivam\\AndroidStudioProjects\\vegieeGitHub\\MajorProject\\User_App\\app\\src\\main\\res\\layout\\activity_splash_screen.xml"
+    },
+    {
+        "merged": "C:\\Users\\shivam\\AndroidStudioProjects\\vegieeGitHub\\MajorProject\\User_App\\app\\build\\intermediates\\res\\merged\\release\\layout_feedback.xml.flat",
+        "source": "C:\\Users\\shivam\\AndroidStudioProjects\\vegieeGitHub\\MajorProject\\User_App\\app\\src\\main\\res\\layout\\feedback.xml"
     }
 ]
