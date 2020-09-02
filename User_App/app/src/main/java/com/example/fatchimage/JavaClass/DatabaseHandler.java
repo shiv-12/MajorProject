@@ -146,7 +146,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 
     public void clearallcartdata() {
         db = getReadableDatabase();
-        String sql = "delete from " + CART_TABLE;
+        String sql = "DELETE FROM " + CART_TABLE;
         db.execSQL(sql);
     }
 

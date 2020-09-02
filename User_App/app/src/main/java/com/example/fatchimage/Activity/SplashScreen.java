@@ -19,7 +19,7 @@ import java.util.HashMap;
 public class SplashScreen extends AppCompatActivity {
 
     Animation bottomanim;
-    TextView textView;
+    TextView textView,texttt;
     private HashMap<String, String> mapp;
     private DatabaseHandler databaseHandler;
 
@@ -29,8 +29,10 @@ public class SplashScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
         textView = findViewById(R.id.textt);
+        texttt = findViewById(R.id.texttt);
         bottomanim = AnimationUtils.loadAnimation(this, R.anim.bottom_animation);
         textView.setAnimation(bottomanim);
+        texttt.setAnimation(bottomanim);
         databaseHandler = new DatabaseHandler(SplashScreen.this);
 
 

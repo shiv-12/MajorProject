@@ -11,12 +11,12 @@
     tools:context=".Activity.profile">
 
     <TextView
-        android:theme="@style/appname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/app_name"
         android:textColor="@color/black"
-        android:textSize="30sp" />
+        android:textSize="30sp"
+        android:theme="@style/appname" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -29,31 +29,30 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Hello,  "
-            android:textStyle="bold"
             android:textColor="@color/black"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/helloname"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Shivam"
-            android:textStyle="bold"
             android:textColor="@color/black"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
     </LinearLayout>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="20dp"
         android:gravity="center"
         android:padding="10dp"
-        android:textColor="@color/black"
         android:text="Your public name"
-        android:textSize="15dp"
-/>
+        android:textColor="@color/black"
+        android:textSize="15dp" />
 
     <TextView
         android:id="@+id/profilename"
@@ -61,13 +60,13 @@
         android:layout_height="wrap_content"
         android:background="@drawable/button"
         android:gravity="center"
-        android:textStyle="bold"
-        android:textColor="@color/black"
         android:inputType="textPersonName"
         android:maxLength="20"
         android:padding="10dp"
         android:text="shivam dashore"
-        android:textSize="15dp" />
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:textStyle="bold" />
 
     <TextView
         android:layout_width="match_parent"
@@ -76,9 +75,8 @@
         android:gravity="center"
         android:padding="10dp"
         android:text="Your mobile number"
-        android:textSize="15dp"
         android:textColor="@color/black"
-       />
+        android:textSize="15dp" />
 
     <TextView
         android:id="@+id/profilenumber"
@@ -88,11 +86,11 @@
         android:gravity="center"
         android:inputType="numberSigned"
         android:maxLength="10"
-        android:textStyle="bold"
-        android:textColor="@color/black"
         android:padding="10dp"
         android:text="9999999999"
-        android:textSize="15dp" />
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:textStyle="bold" />
 
     <TextView
         android:layout_width="match_parent"
@@ -101,9 +99,8 @@
         android:gravity="center"
         android:padding="10dp"
         android:text="Your home address"
-        android:textSize="15dp"
         android:textColor="@color/black"
-        />
+        android:textSize="15dp" />
 
     <TextView
         android:id="@+id/profileaddress"
@@ -111,26 +108,50 @@
         android:layout_height="wrap_content"
         android:background="@drawable/button"
         android:gravity="center"
-        android:textStyle="bold"
-        android:textColor="@color/black"
         android:padding="10dp"
         android:text="9999999999"
-        android:textSize="15dp" />
-
-
-    <TextView
-        android:id="@+id/profileLogout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="40dp"
-        android:background="@drawable/addbutton"
-        android:paddingLeft="40dp"
-        android:paddingTop="10dp"
-        android:paddingRight="40dp"
-        android:paddingBottom="10dp"
-        android:text="Log Out"
-        android:textColor="@color/white"
-        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:textSize="15dp"
         android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/profileLogout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/addbutton"
+            android:gravity="center"
+            android:paddingLeft="40dp"
+            android:paddingTop="10dp"
+            android:paddingRight="40dp"
+            android:paddingBottom="10dp"
+            android:text="Log Out"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/feedback"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/addbutton"
+            android:gravity="center"
+            android:paddingLeft="40dp"
+            android:paddingTop="10dp"
+            android:paddingRight="40dp"
+            android:paddingBottom="10dp"
+            android:text="Feedback"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
 </LinearLayout>

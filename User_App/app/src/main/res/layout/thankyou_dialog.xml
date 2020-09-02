@@ -26,8 +26,8 @@
 
     <ImageView
         android:id="@+id/thankyoucancel"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
         android:layout_marginTop="30dp"
         android:layout_gravity="center_horizontal"
         android:src="@drawable/ic_delete" />

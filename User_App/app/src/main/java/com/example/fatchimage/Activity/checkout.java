@@ -3,6 +3,7 @@ package com.example.fatchimage.Activity;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Dialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
@@ -120,12 +121,16 @@ public class Checkout extends AppCompatActivity {
             @Override
             public void onResponse(String response) {
                 loader.dismiss();
+                databaseHandler.clearallcartdata();
                 dialog.setContentView(R.layout.thankyou_dialog);
                 cancelimage = dialog.findViewById(R.id.thankyoucancel);
                 cancelimage.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
                         dialog.dismiss();
+                        Intent intent = new Intent(Checkout.this,MainActivity.class);
+                        intent.putExtra("flag","1");
+                        startActivity(intent);
                     }
                 });
                 dialog.getWindow().setBackgroundDrawableResource(R.color.blacktrans);
