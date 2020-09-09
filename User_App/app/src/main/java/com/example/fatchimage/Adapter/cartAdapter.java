@@ -66,7 +66,7 @@ public class cartAdapter extends RecyclerView.Adapter<cartAdapter.viewhosderr> {
     public class viewhosderr extends RecyclerView.ViewHolder {
 
         ImageView image,cancelimage;
-        TextView name, desc, price, mrp, qty, update, totalprice,unit;
+        TextView name, desc, price, mrp, qty, totalprice,unit;
         LinearLayout addlayout, totallay, mrplay;
 
 
@@ -83,12 +83,10 @@ public class cartAdapter extends RecyclerView.Adapter<cartAdapter.viewhosderr> {
             qty = itemView.findViewById(R.id.qnty);
             cancelimage = itemView.findViewById(R.id.cancelimage);
             addlayout = itemView.findViewById(R.id.addbutton);
-            update = itemView.findViewById(R.id.update);
             totallay = itemView.findViewById(R.id.totallay);
             mrplay = itemView.findViewById(R.id.mrplayout);
             totalprice = itemView.findViewById(R.id.totalprice);
 
-            update.setVisibility(View.GONE);
             totallay.setVisibility(View.VISIBLE);
             addlayout.setVisibility(View.GONE);
             cancelimage.setVisibility(View.VISIBLE);

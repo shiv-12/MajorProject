@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
         carttext();
 
         Fragment fmm = new homeFragment();
-        getSupportFragmentManager().beginTransaction().add(R.id.framelay, fmm, "homefragment").commit();
+        getSupportFragmentManager().beginTransaction().add(R.id.framelay, fmm, "homefragment").addToBackStack(null).commit();
 
         if (getIntent().getStringExtra("flag").equals("0")) {
             fatchuserdata();
@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
                 bundle.putString("search", query);
                 Fragment fm = new searchFragment();
                 fm.setArguments(bundle);
-                getSupportFragmentManager().beginTransaction().replace(R.id.framelay, fm, "searchfragment").commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.framelay, fm, "searchfragment").addToBackStack(null).commit();
                 return false;
             }
 
@@ -97,13 +97,39 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+
     @Override
     public void onBackPressed() {
 
-        Fragment fmm = new homeFragment();
-        getSupportFragmentManager().beginTransaction().replace(R.id.framelay,fmm).commit();
+
+        String tag = getSupportFragmentManager().findFragmentById(R.id.framelay).getTag();
+        Log.d("sdfasdfsdg", "onBackPressed: " + tag);
+        if (tag.equals("homefragment")) {
+          finishAfterTransition();
+        } else if (tag.equals("searchfragment")) {
+            Fragment fmm = new homeFragment();
+            getSupportFragmentManager().beginTransaction().replace(R.id.framelay, fmm).commit();
+        }
+
 
     }
+
+//    @Override
+//    public void onBackPressed() {
+//
+//        int count = getSupportFragmentManager().getBackStackEntryCount();
+//        Log.d("counttt", "onBackPressed: " + count);
+//
+//        if (count == 1) {
+//            finish();
+//            //additional code
+//        } else {
+//            Fragment fmm = new homeFragment();
+//            getSupportFragmentManager().beginTransaction().replace(R.id.framelay, fmm).commit();
+////            getSupportFragmentManager().popBackStack();
+//        }
+//
+//    }
 
     private void init() {
         cart = findViewById(R.id.cart);

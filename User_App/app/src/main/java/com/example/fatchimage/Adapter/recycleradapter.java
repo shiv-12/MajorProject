@@ -68,9 +68,16 @@ public class recycleradapter extends RecyclerView.Adapter<recycleradapter.viewho
         return list.size();
     }
 
+    @Override
+    public int getItemViewType(int position) {
+        return position;
+
+
+    }
+
     public class viewholderr extends RecyclerView.ViewHolder {
         ImageView image, plus, minus;
-        TextView name, desc, price, qty, update,unit;
+        TextView name, desc, price, qty, unit;
         LinearLayout plusminuslayout, addlayout;
 
 
@@ -88,7 +95,6 @@ public class recycleradapter extends RecyclerView.Adapter<recycleradapter.viewho
             qty = itemView.findViewById(R.id.qty);
             addlayout = itemView.findViewById(R.id.addbutton);
             plusminuslayout = itemView.findViewById(R.id.plusminus_layout);
-            update = itemView.findViewById(R.id.update);
 
 
             addlayout.setOnClickListener(new View.OnClickListener() {
@@ -96,8 +102,32 @@ public class recycleradapter extends RecyclerView.Adapter<recycleradapter.viewho
                 public void onClick(View v) {
                     addlayout.setVisibility(View.GONE);
                     plusminuslayout.setVisibility(View.VISIBLE);
-                    update.setVisibility(View.VISIBLE);
                     qty.setText(String.valueOf(1));
+
+                    if (Integer.valueOf(qty.getText().toString()) > 0) {
+
+
+                        int possitio = getAdapterPosition();
+                        Log.d("TAGG", "onClick: " + list.get(possitio).getName() + qty.getText().toString() + "\n");
+                        HashMap<String, String> params = new HashMap<>();
+                        params.put("product_id", list.get(possitio).getId());
+                        params.put("qty", qty.getText().toString());
+                        params.put("product_name", list.get(possitio).getName());
+                        params.put("description", list.get(possitio).getDesc());
+                        params.put("price", list.get(possitio).getPrice());
+                        params.put("product_image", list.get(possitio).getImage());
+                        params.put("unit", list.get(possitio).getUnit());
+                        if (dbcart.setdatarow(params)) {
+                            Toast.makeText(contextl, "item added to the cart", Toast.LENGTH_SHORT).show();
+                            ArrayList<String> list = dbcart.readData();
+                            Log.d("list", "onClick: " + list.size());
+                            for (int i = 0; i < list.size(); i++) {
+                                Log.d("TAGgg", "onClick: " + list.get(i));
+                            }
+                        }
+                    }
+
+                    ((MainActivity) contextl).carttext();
                 }
             });
             minus.setOnClickListener(new View.OnClickListener() {
@@ -107,11 +137,30 @@ public class recycleradapter extends RecyclerView.Adapter<recycleradapter.viewho
                     if (qtyy > 0) {
                         qtyy = qtyy - 1;
                         qty.setText(String.valueOf(qtyy));
+                        if (Integer.valueOf(qty.getText().toString()) > 0) {
+
+                            int possitio = getAdapterPosition();
+                            Log.d("TAGG", "onClick: " + list.get(possitio).getName() + qty.getText().toString() + "\n");
+                            HashMap<String, String> params = new HashMap<>();
+                            params.put("product_id", list.get(possitio).getId());
+                            params.put("qty", qty.getText().toString());
+                            params.put("product_name", list.get(possitio).getName());
+                            params.put("description", list.get(possitio).getDesc());
+                            params.put("price", list.get(possitio).getPrice());
+                            params.put("product_image", list.get(possitio).getImage());
+                            params.put("unit", list.get(possitio).getUnit());
+                            if (dbcart.setdatarow(params)) {
+                                ArrayList<String> list = dbcart.readData();
+                                Log.d("list", "onClick: " + list.size());
+                                for (int i = 0; i < list.size(); i++) {
+                                    Log.d("TAGgg", "onClick: " + list.get(i));
+                                }
+                            }
+                        }
                     }
                     if (qtyy == 0) {
                         plusminuslayout.setVisibility(View.GONE);
                         addlayout.setVisibility(View.VISIBLE);
-                        update.setVisibility(View.GONE);
                         int possition = getAdapterPosition();
                         String id = String.valueOf(list.get(possition).getId());
 
@@ -128,46 +177,28 @@ public class recycleradapter extends RecyclerView.Adapter<recycleradapter.viewho
                     qtyy = qtyy + 1;
                     if (qtyy <= 20) {
                         qty.setText(String.valueOf(qtyy));
+                        if (Integer.valueOf(qty.getText().toString()) > 0) {
+                            int possitio = getAdapterPosition();
+                            Log.d("TAGG", "onClick: " + list.get(possitio).getName() + qty.getText().toString() + "\n");
+                            HashMap<String, String> params = new HashMap<>();
+                            params.put("product_id", list.get(possitio).getId());
+                            params.put("qty", qty.getText().toString());
+                            params.put("product_name", list.get(possitio).getName());
+                            params.put("description", list.get(possitio).getDesc());
+                            params.put("price", list.get(possitio).getPrice());
+                            params.put("product_image", list.get(possitio).getImage());
+                            params.put("unit", list.get(possitio).getUnit());
+                            if (dbcart.setdatarow(params)) {
+                                ArrayList<String> list = dbcart.readData();
+                                Log.d("list", "onClick: " + list.size());
+                                for (int i = 0; i < list.size(); i++) {
+                                    Log.d("TAGgg", "onClick: " + list.get(i));
+                                }
+                            }
+                        }
                     } else
                         Toast.makeText(contextl, "maximum 20 products you can add", Toast.LENGTH_LONG).show();
 
-                }
-            });
-            update.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-
-                    if (Integer.valueOf(qty.getText().toString()) > 0) {
-
-
-                        int possitio = getAdapterPosition();
-                        Log.d("TAGG", "onClick: " + list.get(possitio).getName() + qty.getText().toString() + "\n");
-                        HashMap<String, String> params = new HashMap<>();
-                        params.put("product_id", list.get(possitio).getId());
-                        params.put("qty", qty.getText().toString());
-                        params.put("product_name", list.get(possitio).getName());
-                        params.put("description", list.get(possitio).getDesc());
-                        params.put("price", list.get(possitio).getPrice());
-                        params.put("product_image", list.get(possitio).getImage());
-                        params.put("unit",list.get(possitio).getUnit());
-
-//                        if (dbcart.isInCart(list.get(possitio).getId())) {
-//                            Toast.makeText(contextl, "data present already !", Toast.LENGTH_LONG).show();
-//                        }
-//                        else {
-                        if (dbcart.setdatarow(params)) {
-                            Toast.makeText(contextl, "item added to the cart", Toast.LENGTH_SHORT).show();
-                            ArrayList<String> list = dbcart.readData();
-                            Log.d("list", "onClick: " + list.size());
-                            for (int i = 0; i < list.size(); i++) {
-                                Log.d("TAGgg", "onClick: " + list.get(i));
-                            }
-                        }
-//                        }
-
-                    }
-
-                    ((MainActivity) contextl).carttext();
                 }
             });
 

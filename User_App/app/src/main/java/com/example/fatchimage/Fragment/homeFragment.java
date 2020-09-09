@@ -71,6 +71,10 @@ public class homeFragment extends Fragment {
         return view;
     }
 
+
+
+
+
     private void fatchdata(int page) {
         final Loader loader = new Loader((Activity) getContext());
         loader.startDialog();
