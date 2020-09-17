@@ -71,9 +71,9 @@ public class profile extends AppCompatActivity {
                     public void onClick(View v) {
                         dialog.dismiss();
                         String pushid = myRef.push().getKey();
-                        myRef.child(pushid).child("name").setValue(mapp.get("username"));
-                        myRef.child(pushid).child("number").setValue(mapp.get("userMobile"));
-                        myRef.child(pushid).child("feedback").setValue(feedbackedit.getText().toString());
+                        myRef.child("feedback").child(pushid).child("name").setValue(mapp.get("username"));
+                        myRef.child("feedback").child(pushid).child("number").setValue(mapp.get("userMobile"));
+                        myRef.child("feedback").child(pushid).child("feedback").setValue(feedbackedit.getText().toString());
                         Toast.makeText(profile.this, "feedback submitted successfully", Toast.LENGTH_SHORT).show();
                     }
                 });

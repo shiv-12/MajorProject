@@ -297,6 +297,7 @@ attr hideOnContentScroll
 attr hideOnScroll
 attr hintAnimationEnabled
 attr hintEnabled
+attr hintText
 attr hintTextAppearance
 attr homeAsUpIndicator
 attr homeLayout
@@ -1259,7 +1260,6 @@ id customPanel
 id dark
 id decor_content_parent
 id default_activity_button
-id des
 id design_bottom_sheet
 id design_menu_item_action_area
 id design_menu_item_action_area_stub
@@ -1316,6 +1316,7 @@ id left
 id light
 id line1
 id line3
+id listItems
 id listMode
 id list_item
 id lottie_layer_name
@@ -1325,7 +1326,6 @@ id message
 id middle
 id mini
 id minus
-id more
 id mrplayout
 id mrpprize
 id mtrl_child_content_container
@@ -1381,7 +1381,6 @@ id reverse
 id right
 id right_icon
 id right_side
-id rs
 id save_image_matrix
 id save_non_transition_alpha
 id save_scale_type
@@ -1391,6 +1390,7 @@ id scrollIndicatorDown
 id scrollIndicatorUp
 id scrollView
 id scrollable
+id search
 id searchRv
 id search_badge
 id search_bar
@@ -1417,6 +1417,7 @@ id snap
 id snapMargins
 id software
 id spacer
+id spinner
 id split_action_bar
 id spread
 id spread_inside
@@ -1583,6 +1584,7 @@ layout notification_template_media
 layout notification_template_media_custom
 layout notification_template_part_chronometer
 layout notification_template_part_time
+layout searchable_list_dialog
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
@@ -2234,6 +2236,7 @@ styleable RecyclerView android_orientation android_clipToPadding android_descend
 styleable ScrimInsetsFrameLayout insetForeground
 styleable ScrollingViewBehavior_Layout behavior_overlapTop
 styleable SearchView android_focusable android_maxWidth android_inputType android_imeOptions closeIcon commitIcon defaultQueryHint goIcon iconifiedByDefault layout queryBackground queryHint searchHintIcon searchIcon submitBackground suggestionRowLayout voiceIcon
+styleable SearchableSpinner hintText
 styleable SignInButton buttonSize colorScheme scopeUris
 styleable Snackbar snackbarButtonStyle snackbarStyle
 styleable SnackbarLayout android_maxWidth elevation maxActionInlineWidth

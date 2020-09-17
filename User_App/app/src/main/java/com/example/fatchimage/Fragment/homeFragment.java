@@ -101,6 +101,7 @@ public class homeFragment extends Fragment {
                         model.setImage(obj.getString("product_image"));
                         model.setUnit(obj.getString("unit"));
                         model.setId(obj.getString("product_id"));
+                        model.setInstock(obj.getString("product_in_stock"));
                         list.add(model);
                     }
                     adapter.notifyDataSetChanged();

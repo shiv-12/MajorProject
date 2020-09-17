@@ -1,5 +1,7 @@
 package com.example.fatchimage.Activity;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.SearchView;
 import androidx.fragment.app.Fragment;
@@ -10,8 +12,11 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -19,7 +24,15 @@ import com.example.fatchimage.JavaClass.DatabaseHandler;
 import com.example.fatchimage.R;
 import com.example.fatchimage.Fragment.homeFragment;
 import com.example.fatchimage.Fragment.searchFragment;
+import com.google.firebase.database.ChildEventListener;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.toptoche.searchablespinnerlibrary.SearchableSpinner;
 
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 
 public class MainActivity extends AppCompatActivity {
@@ -30,6 +43,10 @@ public class MainActivity extends AppCompatActivity {
     private RelativeLayout cartredzone, cart;
     private DatabaseHandler dbcart;
     private RelativeLayout frameLayout;
+    private SearchableSpinner spinner;
+    FirebaseDatabase firebaseDatabase;
+    DatabaseReference mref;
+    private ArrayAdapter adapter;
 
 
     @Override
@@ -39,9 +56,11 @@ public class MainActivity extends AppCompatActivity {
 
         init();
         carttext();
+        searchcategories();
+
 
         Fragment fmm = new homeFragment();
-        getSupportFragmentManager().beginTransaction().add(R.id.framelay, fmm, "homefragment").addToBackStack(null).commit();
+        getSupportFragmentManager().beginTransaction().add(R.id.framelay, fmm, "homefragment").commit();
 
         if (getIntent().getStringExtra("flag").equals("0")) {
             fatchuserdata();
@@ -55,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
                 bundle.putString("search", query);
                 Fragment fm = new searchFragment();
                 fm.setArguments(bundle);
-                getSupportFragmentManager().beginTransaction().replace(R.id.framelay, fm, "searchfragment").addToBackStack(null).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.framelay, fm, "searchfragment").commit();
                 return false;
             }
 
@@ -97,6 +116,67 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    private void searchcategories() {
+
+
+        spinner.setTitle("Select Category");
+
+        final ArrayList<String> categories = new ArrayList<>();
+        adapter = new ArrayAdapter<>(MainActivity.this, android.R.layout.simple_spinner_dropdown_item, categories);
+        spinner.setAdapter(adapter);
+
+        mref.child("categories").addChildEventListener(new ChildEventListener() {
+            @Override
+            public void onChildAdded(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {
+                String items = snapshot.getValue(String.class);
+                categories.add(items);
+                Collections.sort(categories);
+                adapter.notifyDataSetChanged();
+            }
+
+            @Override
+            public void onChildChanged(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {
+                Collections.sort(categories);
+                adapter.notifyDataSetChanged();
+            }
+
+            @Override
+            public void onChildRemoved(@NonNull DataSnapshot snapshot) {
+                Collections.sort(categories);
+                adapter.notifyDataSetChanged();
+
+            }
+
+            @Override
+            public void onChildMoved(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {
+                Collections.sort(categories);
+                adapter.notifyDataSetChanged();
+
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+                Collections.sort(categories);
+                adapter.notifyDataSetChanged();
+
+            }
+        });
+
+
+        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+
+                String item = parent.getItemAtPosition(position).toString();
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+            }
+        });
+
+    }
+
 
     @Override
     public void onBackPressed() {
@@ -105,7 +185,7 @@ public class MainActivity extends AppCompatActivity {
         String tag = getSupportFragmentManager().findFragmentById(R.id.framelay).getTag();
         Log.d("sdfasdfsdg", "onBackPressed: " + tag);
         if (tag.equals("homefragment")) {
-          finishAfterTransition();
+            finishAfterTransition();
         } else if (tag.equals("searchfragment")) {
             Fragment fmm = new homeFragment();
             getSupportFragmentManager().beginTransaction().replace(R.id.framelay, fmm).commit();
@@ -113,23 +193,6 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
-
-//    @Override
-//    public void onBackPressed() {
-//
-//        int count = getSupportFragmentManager().getBackStackEntryCount();
-//        Log.d("counttt", "onBackPressed: " + count);
-//
-//        if (count == 1) {
-//            finish();
-//            //additional code
-//        } else {
-//            Fragment fmm = new homeFragment();
-//            getSupportFragmentManager().beginTransaction().replace(R.id.framelay, fmm).commit();
-////            getSupportFragmentManager().popBackStack();
-//        }
-//
-//    }
 
     private void init() {
         cart = findViewById(R.id.cart);
@@ -140,6 +203,10 @@ public class MainActivity extends AppCompatActivity {
         searchView = findViewById(R.id.searchbox);
         frameLayout = findViewById(R.id.framelay);
         gototactt = findViewById(R.id.gotocartt);
+        spinner = findViewById(R.id.spinner);
+        firebaseDatabase = FirebaseDatabase.getInstance();
+        mref = firebaseDatabase.getReference();
+
     }
 
     private void fatchuserdata() {

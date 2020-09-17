@@ -1,5 +1,6 @@
 package com.example.fatchimage.Activity;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.IntentCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -17,6 +18,11 @@ import com.example.fatchimage.Adapter.cartAdapter;
 import com.example.fatchimage.JavaClass.DatabaseHandler;
 import com.example.fatchimage.JavaClass.modelclass;
 import com.example.fatchimage.R;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -86,26 +92,33 @@ public class Next extends AppCompatActivity {
             int price = (Integer.valueOf(listt.get(i).getPrice()) * Integer.valueOf(listt.get(i).getQty()));
             p = price + p;
         }
+        String deliveryy = getIntent().getStringExtra("deliveryy");
+
         nexttotalamount.setText(String.valueOf(p));
         totalamm = String.valueOf(p);
         itemamm = String.valueOf(listt.size());
-        int moree = 200 - p;
-        if (moree <= 0) {
-            des.setVisibility(View.GONE);
-            rs.setVisibility(View.GONE);
-            more.setText("Hurry!  You Got Free delivery");
-            nextdelivery.setText("0");
-            nextfinal.setText(String.valueOf(p));
-            finalamm = String.valueOf(p);
-            delivery = String.valueOf(0);
+        nextdelivery.setText(deliveryy);
+        nextfinal.setText(String.valueOf(p + Integer.parseInt(deliveryy)));
+        finalamm = String.valueOf(p + Integer.parseInt(deliveryy));
+        delivery = String.valueOf(Integer.parseInt(deliveryy));
 
-        } else {
-            more.setText(String.valueOf(moree));
-            nextdelivery.setText("20");
-            nextfinal.setText(String.valueOf(p + 20));
-            finalamm = String.valueOf(p + 20);
-            delivery = String.valueOf(20);
-        }
+//        int moree = 200 - p;
+//        if (moree <= 0) {
+//            des.setVisibility(View.GONE);
+//            rs.setVisibility(View.GONE);
+//            more.setText("Hurry!  You Got Free delivery");
+//            nextdelivery.setText("0");
+//            nextfinal.setText(String.valueOf(p));
+//            finalamm = String.valueOf(p);
+//            delivery = String.valueOf(0);
+//
+//        } else {
+//            more.setText(String.valueOf(moree));
+//            nextdelivery.setText("20");
+//            nextfinal.setText(String.valueOf(p + 20));
+//            finalamm = String.valueOf(p + 20);
+//            delivery = String.valueOf(20);
+//        }
 
     }
 
@@ -118,12 +131,13 @@ public class Next extends AppCompatActivity {
         maps = databaseHandler.cartall();
         nexttotalamount = findViewById(R.id.nexttotalamount);
         nextcontinueshopping = findViewById(R.id.nextcontinueshopping);
-        more = findViewById(R.id.more);
-        des = findViewById(R.id.des);
-        rs = findViewById(R.id.rs);
+//        more = findViewById(R.id.more);
+//        des = findViewById(R.id.des);
+//        rs = findViewById(R.id.rs);
         nextdelivery = findViewById(R.id.nextdelivery);
         nextfinal = findViewById(R.id.nextfinal);
         nextcheckout = findViewById(R.id.nextcheckout);
+
 
     }
 }

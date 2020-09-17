@@ -1,7 +1,7 @@
 package com.example.fatchimage.JavaClass;
 
 public class modelclass {
-    String image, name,desc,price,id,qty,unit;
+    String image, name,desc,price,id,qty,unit,instock;
 
     public String getUnit() {
         return unit;
@@ -9,6 +9,14 @@ public class modelclass {
 
     public void setUnit(String unit) {
         this.unit = unit;
+    }
+
+    public String getInstock() {
+        return instock;
+    }
+
+    public void setInstock(String instock) {
+        this.instock = instock;
     }
 
     public String getImage() {

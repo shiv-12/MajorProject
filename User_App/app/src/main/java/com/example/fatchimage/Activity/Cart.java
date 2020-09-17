@@ -1,5 +1,6 @@
 package com.example.fatchimage.Activity;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -32,6 +33,11 @@ import com.example.fatchimage.R;
 import com.example.fatchimage.Adapter.cartAdapter;
 import com.example.fatchimage.JavaClass.modelclass;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -57,6 +63,9 @@ public class Cart extends AppCompatActivity {
     private RequestQueue requestQueue, requestQueue1;
     private Dialog dialog;
     private ImageView cancelimage;
+    private FirebaseDatabase firebaseDatabase;
+    private DatabaseReference mref;
+    private String deliveryy;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -68,16 +77,27 @@ public class Cart extends AppCompatActivity {
             showdata();
         }
 
+        mref.child("delivery").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                deliveryy = snapshot.getValue(String.class);
+                Log.d(TAG, "onDataChange: " + deliveryy);
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+            }
+        });
+
 
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (databaseHandler.cartall().size() > 0)
-                {
+                if (databaseHandler.cartall().size() > 0 && deliveryy != null) {
                     Intent intent = new Intent(Cart.this, Next.class);
+                    intent.putExtra("deliveryy", deliveryy);
                     startActivity(intent);
-                }
-                else
+                } else
                     Toast.makeText(Cart.this, "your cart is empty", Toast.LENGTH_SHORT).show();
 
             }
@@ -166,6 +186,8 @@ public class Cart extends AppCompatActivity {
         dialog = new Dialog(Cart.this);
         next = findViewById(R.id.cartnext);
         cartcontinueshopping = findViewById(R.id.cartcontinueshopping);
+        firebaseDatabase = FirebaseDatabase.getInstance();
+        mref = firebaseDatabase.getReference();
 
 
     }

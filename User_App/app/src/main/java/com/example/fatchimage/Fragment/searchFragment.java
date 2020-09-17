@@ -82,6 +82,7 @@ public class searchFragment extends Fragment {
                         model.setPrice(obj.getString("product_price"));
                         model.setImage(obj.getString("product_image"));
                         model.setUnit(obj.getString("unit"));
+                        model.setInstock(obj.getString("product_in_stock"));
                         model.setId(obj.getString("product_id"));
                         list.add(model);
 
