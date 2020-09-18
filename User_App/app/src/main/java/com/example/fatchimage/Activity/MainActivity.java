@@ -20,6 +20,7 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.fatchimage.Fragment.categoryFragment;
 import com.example.fatchimage.JavaClass.DatabaseHandler;
 import com.example.fatchimage.R;
 import com.example.fatchimage.Fragment.homeFragment;
@@ -44,9 +45,10 @@ public class MainActivity extends AppCompatActivity {
     private DatabaseHandler dbcart;
     private RelativeLayout frameLayout;
     private SearchableSpinner spinner;
-    FirebaseDatabase firebaseDatabase;
-    DatabaseReference mref;
+    private FirebaseDatabase firebaseDatabase;
+    private DatabaseReference mref;
     private ArrayAdapter adapter;
+    private static final String TAG = "MainActivity";
 
 
     @Override
@@ -56,11 +58,12 @@ public class MainActivity extends AppCompatActivity {
 
         init();
         carttext();
-        searchcategories();
 
 
         Fragment fmm = new homeFragment();
         getSupportFragmentManager().beginTransaction().add(R.id.framelay, fmm, "homefragment").commit();
+
+        searchcategories();
 
         if (getIntent().getStringExtra("flag").equals("0")) {
             fatchuserdata();
@@ -73,9 +76,10 @@ public class MainActivity extends AppCompatActivity {
                 Bundle bundle = new Bundle();
                 bundle.putString("search", query);
                 Fragment fm = new searchFragment();
+
                 fm.setArguments(bundle);
                 getSupportFragmentManager().beginTransaction().replace(R.id.framelay, fm, "searchfragment").commit();
-                return false;
+                return true;
             }
 
             @Override
@@ -136,38 +140,43 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onChildChanged(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {
-                Collections.sort(categories);
-                adapter.notifyDataSetChanged();
+
             }
 
             @Override
             public void onChildRemoved(@NonNull DataSnapshot snapshot) {
-                Collections.sort(categories);
-                adapter.notifyDataSetChanged();
+
 
             }
 
             @Override
             public void onChildMoved(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {
-                Collections.sort(categories);
-                adapter.notifyDataSetChanged();
+
 
             }
 
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
-                Collections.sort(categories);
-                adapter.notifyDataSetChanged();
+
 
             }
         });
 
 
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            int i = 0;
+
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-
-                String item = parent.getItemAtPosition(position).toString();
+                i++;
+                if (i >= 2) {
+                    String item = parent.getItemAtPosition(position).toString();
+                    Bundle bundle = new Bundle();
+                    bundle.putString("category", item);
+                    Fragment fm = new categoryFragment();
+                    fm.setArguments(bundle);
+                    getSupportFragmentManager().beginTransaction().replace(R.id.framelay, fm, "categoryfragment").commit();
+                }
             }
 
             @Override
@@ -181,17 +190,17 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public void onBackPressed() {
 
-
         String tag = getSupportFragmentManager().findFragmentById(R.id.framelay).getTag();
         Log.d("sdfasdfsdg", "onBackPressed: " + tag);
-        if (tag.equals("homefragment")) {
-            finishAfterTransition();
-        } else if (tag.equals("searchfragment")) {
-            Fragment fmm = new homeFragment();
-            getSupportFragmentManager().beginTransaction().replace(R.id.framelay, fmm).commit();
+        if (tag.equals("searchfragment")) {
+            Fragment fmmmm = new homeFragment();
+            getSupportFragmentManager().beginTransaction().replace(R.id.framelay, fmmmm, "homefragment").commit();
+        } else if (tag.equals("categoryfragment")) {
+            Fragment fmmm = new homeFragment();
+            getSupportFragmentManager().beginTransaction().replace(R.id.framelay, fmmm, "homefragment").commit();
+        } else {
+            super.onBackPressed();
         }
-
-
     }
 
     private void init() {

@@ -1235,6 +1235,7 @@ id cartText
 id cartcontinueshopping
 id cartnext
 id cartredzone
+id categoryRv
 id cdelivery
 id center
 id center_horizontal
@@ -1562,6 +1563,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_password_icon
 layout feedback
+layout fragment_category
 layout fragment_home
 layout fragment_search
 layout itemview
