@@ -165,7 +165,6 @@ public class MainActivity extends AppCompatActivity {
 
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             int i = 0;
-
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 i++;
@@ -191,7 +190,6 @@ public class MainActivity extends AppCompatActivity {
     public void onBackPressed() {
 
         String tag = getSupportFragmentManager().findFragmentById(R.id.framelay).getTag();
-        Log.d("sdfasdfsdg", "onBackPressed: " + tag);
         if (tag.equals("searchfragment")) {
             Fragment fmmmm = new homeFragment();
             getSupportFragmentManager().beginTransaction().replace(R.id.framelay, fmmmm, "homefragment").commit();
@@ -225,7 +223,6 @@ public class MainActivity extends AppCompatActivity {
         params.put("userName", getIntent().getStringExtra("username"));
         params.put("userMobile", getIntent().getStringExtra("userPhoneNo"));
         params.put("userAddress", getIntent().getStringExtra("address"));
-        Log.d("TAG", "fatchuserdataaa: " + getIntent().getStringExtra("address"));
         dbcart.setuserdata(params);
 
     }
