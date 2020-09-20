@@ -47,8 +47,10 @@ public class MainActivity extends AppCompatActivity {
     private DatabaseHandler dbcart;
     private static final String TAG = "MainActivity";
     private RequestQueue requestQueue;
+    private boolean returndata = true;
+    int page = 1;
     //    GoogleSignInClient mGoogleSignInClient;
-    private String url = "https://shivam7898337488.000webhostapp.com/getproduct.php";
+    private String url = "https://shivam7898337488.000webhostapp.com/getproduct.php?pageno=";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -71,7 +73,20 @@ public class MainActivity extends AppCompatActivity {
         searchedit = findViewById(R.id.searchedit);
 
         carttext();
-        fatchdata();
+        fatchdata(page);
+        recyclerView.setOnScrollListener(new RecyclerView.OnScrollListener() {
+            @Override
+            public void onScrolled(RecyclerView recyclerView, int dx, int dy) {
+                if (utils.isLastItemDisplaying(recyclerView)) {
+                    if (returndata) {
+                        page++;
+                        fatchdata(page);
+                    }
+
+                }
+                super.onScrolled(recyclerView, dx, dy);
+            }
+        });
         searchedit.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
@@ -158,12 +173,16 @@ public class MainActivity extends AppCompatActivity {
 //    }
 
 
-    private void fatchdata() {
+    private void fatchdata(int page) {
         final Loader loader = new Loader(MainActivity.this);
         loader.startDialog();
-        StringRequest request = new StringRequest(Request.Method.GET, url, new Response.Listener<String>() {
+        StringRequest request = new StringRequest(Request.Method.GET, url+page, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
+
+                if (response.equals("Data Not Found")) {
+                    returndata = false;
+                }
 
                 loader.dismiss();
 
