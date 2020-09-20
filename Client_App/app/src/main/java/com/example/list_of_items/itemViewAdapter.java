@@ -35,12 +35,6 @@ public class itemViewAdapter extends RecyclerView.Adapter<itemViewAdapter.viewhp
         model_list model_list = list.get(position);
         List<String> vegiee = model_list.getVegiee_name();
         List<String> qtyy = model_list.getQty();
-        List<String> unit  = model_list.getUnit();
-
-        holder.usermobile.setText(model_list.getUsermobile());
-        holder.username.setText(model_list.getUsername());
-        holder.total_price.setText(model_list.getTotalprice());
-        holder.address.setText(model_list.getAddress());
 
         holder.itemlist.setText("");
         for (int i = 0; i < vegiee.size(); i++) {
@@ -49,7 +43,7 @@ public class itemViewAdapter extends RecyclerView.Adapter<itemViewAdapter.viewhp
         }
         holder.qty.setText("");
         for (int i = 0; i < qtyy.size(); i++) {
-            String qt = qtyy.get(i) +"  "+ unit.get(i) + "\n";
+            String qt = qtyy.get(i) + "\n";
             holder.qty.append(qt);
         }
 
@@ -62,16 +56,12 @@ public class itemViewAdapter extends RecyclerView.Adapter<itemViewAdapter.viewhp
     }
 
     public class viewhplderr extends RecyclerView.ViewHolder {
-        TextView itemlist, qty, username, usermobile, total_price, address;
+        TextView itemlist, qty;
 
         public viewhplderr(@NonNull View itemView) {
             super(itemView);
             itemlist = itemView.findViewById(R.id.itemname);
             qty = itemView.findViewById(R.id.qty);
-            username = itemView.findViewById(R.id.username);
-            usermobile = itemView.findViewById(R.id.usermobile);
-            total_price = itemView.findViewById(R.id.totalamoun);
-            address = itemView.findViewById(R.id.address);
         }
     }
 }

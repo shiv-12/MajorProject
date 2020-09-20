@@ -21,10 +21,4 @@
         //for showing titile on status bar
     </style>
 
-    <style name="appname">
-
-        <item name="fontFamily">@font/lobster</item>
-
-    </style>
-
 </resources>

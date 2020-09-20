@@ -11,7 +11,6 @@
     app:cardCornerRadius="20dp"
     app:cardUseCompatPadding="true">
 
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -28,33 +27,9 @@
             android:orientation="vertical">
 
             <TextView
+
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Customer Name     =>"
-                android:textColor="#000000" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_weight="1"
-                android:text="Customer Mobile    =>"
-                android:textColor="#000000" />
-
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_weight="1"
-                android:text="Total Amount          =>"
-                android:textColor="#000000" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
                 android:layout_weight="1"
                 android:gravity="center"
                 android:text="Name Of Vegiee"
@@ -64,17 +39,9 @@
                 android:id="@+id/itemname"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="7dp"
-                android:text="aalu\ngobhi\ntamater" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:layout_weight="1"
-                android:layout_marginBottom="10dp"
-                android:text="Home Address        =>"
-                android:textColor="#000000" />
+                android:gravity="center"
+                android:text="aalu\ngobhi\ntamater" />
 
 
         </LinearLayout>
@@ -86,39 +53,8 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/username"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:text="Shivam dashore"
-                android:textColor="#000000" />
-
-            <TextView
-                android:id="@+id/usermobile"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:text="6260599493"
-                android:textColor="#000000" />
-
-
-            <TextView
-                android:id="@+id/totalamoun"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:text="100"
-                android:textColor="#000000" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
                 android:layout_weight="1"
                 android:gravity="center"
                 android:text="Quntity"
@@ -128,20 +64,9 @@
                 android:id="@+id/qty"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="40dp"
-                android:layout_marginTop="7dp"
-                android:text="1\n2\n1" />
-
-            <TextView
-                android:id="@+id/address"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:layout_weight="1"
-                android:layout_marginBottom="10dp"
                 android:gravity="center"
-                android:text="djlassdfa asdflasjldfa asdjflfa"
-                android:textColor="#000000" />
+                android:text="1\n2\n1" />
 
         </LinearLayout>
 

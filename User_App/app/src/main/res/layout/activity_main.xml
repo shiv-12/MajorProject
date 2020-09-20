@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/white"
     android:orientation="vertical"
-    tools:context=".Activity.MainActivity">
+    tools:context=".MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -16,93 +16,82 @@
         android:layout_marginRight="15dp"
         android:layout_marginBottom="15dp"
         android:gravity="center"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:weightSum="4">
 
-
-        <androidx.appcompat.widget.SearchView
-            android:id="@+id/searchbox"
+        <EditText
+            android:id="@+id/searchedit"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="@drawable/button" />
-
-        <com.toptoche.searchablespinnerlibrary.SearchableSpinner
-            android:id="@+id/spinner"
-            android:layout_width="50dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="7dp"
-            android:layout_marginRight="7dp"
-            android:gravity="center" />
+            android:layout_weight="3"
+            android:background="@drawable/button"
+            android:drawableRight="@drawable/ic_search_"
+            android:fontFamily="@font/lato"
+            android:hint="Search Vegiee"
+            android:padding="10dp"
+            android:textSize="12dp" />
 
         <RelativeLayout
             android:id="@+id/cart"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginRight="15dp"
-            android:gravity="center">
+            android:gravity="center"
+            android:layout_weight="1">
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
+               android:layout_centerVertical="true"
                 android:src="@drawable/ic_supermarket" />
 
             <RelativeLayout
                 android:id="@+id/cartredzone"
                 android:layout_width="22dp"
                 android:layout_height="22dp"
-                android:layout_marginLeft="15dp"
-                android:layout_marginBottom="20dp"
-                android:background="@drawable/redcard"
+                android:visibility="gone"
                 android:gravity="center"
-                android:visibility="gone">
-
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/redcard">
                 <TextView
                     android:id="@+id/cartText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="2dp"
-                    android:text="1"
                     android:textColor="@color/white"
-                    android:textStyle="bold" />
+                    android:layout_marginBottom="2dp"
+                    android:textStyle="bold"
+                    android:text="1"/>
             </RelativeLayout>
         </RelativeLayout>
-
-        <ImageView
-            android:id="@+id/profile"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginRight="5dp"
-            android:src="@drawable/ic_userr" />
 
 
     </LinearLayout>
 
 
-    <RelativeLayout
-        android:id="@+id/framelay"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1">
-
-    </RelativeLayout>
-
-    <TextView
-        android:id="@+id/gotocartt"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:layout_marginBottom="10dp"
-        android:background="@drawable/addbutton"
-        android:gravity="center"
-        android:padding="12dp"
-        android:text="Go To Cart"
-        android:textColor="@color/white"
-        android:textSize="15dp"
-        android:textStyle="bold" />
+        android:layout_weight="1" />
+
+    <!--    <Button-->
+    <!--        android:id="@+id/cart"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_gravity="bottom"-->
+    <!--        android:layout_marginLeft="50dp"-->
+    <!--        android:layout_marginRight="50dp"-->
+    <!--        android:layout_marginBottom="15dp"-->
+    <!--        android:background="@drawable/button"-->
+    <!--        android:backgroundTint="#F1F1F1"-->
+    <!--        android:text="Go To Cart "-->
+    <!--        android:textAllCaps="false"-->
+    <!--        android:textColor="#000000"-->
+    <!--        android:textSize="15dp"-->
+    <!--        android:visibility="gone" />-->
 
 
 </LinearLayout>

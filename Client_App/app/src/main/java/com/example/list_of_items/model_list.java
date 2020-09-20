@@ -5,54 +5,9 @@ import java.util.List;
 
 public class model_list {
 
-    List<String> vegiee_name = new ArrayList<>();
-    List<String> qty = new ArrayList<>();
-    List<String> unit = new ArrayList<>();
-    String username, usermobile,totalprice,address;
+    List<String>vegiee_name= new ArrayList<>();
+    List<String>qty= new ArrayList<>();
 
-    public String getTotalprice() {
-        return totalprice;
-    }
-
-    public String getAddress() {
-        return address;
-    }
-
-
-
-    public List<String> getUnit() {
-        return unit;
-    }
-
-    public void setUnit(String unit) {
-        this.unit.add(unit);
-    }
-
-
-
-    public void setAddress(String address) {
-        this.address = address;
-    }
-
-    public void setTotalprice(String totalprice) {
-        this.totalprice = totalprice;
-    }
-
-    public String getUsername() {
-        return username;
-    }
-
-    public void setUsername(String username) {
-        this.username = username;
-    }
-
-    public String getUsermobile() {
-        return usermobile;
-    }
-
-    public void setUsermobile(String usermobile) {
-        this.usermobile = usermobile;
-    }
 
     public List<String> getVegiee_name() {
         return vegiee_name;
@@ -62,7 +17,7 @@ public class model_list {
         this.vegiee_name.add(vegiee_name);
     }
 
-    public List<String> getQty() {
+    public  List<String> getQty() {
         return qty;
     }
 

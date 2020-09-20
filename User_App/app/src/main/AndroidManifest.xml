@@ -11,32 +11,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.fullscreen">
-        <activity android:name=".Activity.Checkout"></activity>
-        <activity android:name=".Activity.Next" />
-        <activity
-            android:name=".Activity.profile"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".Activity.otpScreen"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".Activity.sign_in"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".Activity.SplashScreen"
-            android:screenOrientation="portrait">
+        <activity android:name=".sign_in" />
+        <activity android:name=".Cart" />
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".Activity.Cart"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".Activity.MainActivity"
-            android:screenOrientation="portrait" />
 
         <meta-data
             android:name="preloaded_fonts"
